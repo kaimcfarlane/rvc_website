@@ -6,7 +6,7 @@ import next from 'next'
 export default function RVC_LOGO() {
   return (
     // Div below needs to be %5
-    <div class="left-5/100 relative">
+    <div class="left-[2%] relative">
     <a href=''>
     <Image src={rvc_logo_img} width={100} height={100}></Image>
     </a>
