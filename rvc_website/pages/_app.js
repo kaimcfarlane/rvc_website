@@ -13,6 +13,9 @@ export default function App({ Component, pageProps }) {
       <meta name="description" content="Official website for... something." />
       <meta name="build version" content={version} /> 
       <link rel="icon" href={favicon.src} type="image/x-icon"/>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+      </style>
     </Head>
     <Component {...pageProps} />
     </>
