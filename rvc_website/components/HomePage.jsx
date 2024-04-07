@@ -11,7 +11,7 @@ export default function HomePage() {
       <div class='bg-white opacity-85 w-[400px] h-[120px] static ml-[60%] mt-[45%] rounded-md'>
         <div class='flex text-black justify-center font-<K2D> text-[1.6rem] p-[5%]'>
           <div class='mr-[2%]'>COME</div>
-          <div class='text-[#0094DA] mr-[2%]'>SEE</div>
+          <div class='text-secondary mr-[2%]'>SEE</div>
           <div class='mr-[2%]'>THE</div>
           <div class='mr-[2%]'>DIFFERENCE</div>
         </div>

@@ -10,6 +10,13 @@ module.exports = {
       'nunito': ['nunito', 'sans-serif'],
       'K2D': ['K2D', 'sans-serif'] // Ensure fonts with spaces have " " surrounding it.
     },
+    colors: {
+      primary: '#0094DA',
+      secondary: '#22c55e',
+      exact_secondary: '#85B446',
+      white: '#FFFFFF',
+      black: '#000000'
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -20,6 +27,6 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: [],
+    themes: ["emerald"],
   },
 }
