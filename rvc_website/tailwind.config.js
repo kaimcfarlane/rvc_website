@@ -26,7 +26,8 @@ module.exports = {
       secondary_daisy: '#66cc8a', // Blue
       exact_secondary: '#85B446',
       white: '#FFFFFF',
-      black: '#000000'
+      opaque_white: "rgb(255 255 255 / 90%)",
+      black: '#000000',
     },
     extend: {
       backgroundImage: {
@@ -44,8 +45,8 @@ module.exports = {
           'primary': '#0094DA',
           'secondary': '#22c55e',
           'accent': '#FFFFFF',
-          'neutral': '#000000',
-          'base-100': '#000000'
+          'neutral': '#FFFFFF',
+          'base-100': '#ffffff'
         },
       },
     ],
