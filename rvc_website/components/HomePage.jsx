@@ -1,6 +1,7 @@
 import React from 'react'
 import rvc_offiefloor from '../public/rvc_office/rvc_officefloor.jpeg'
 import { useRef } from 'react'
+import GreenBanner from './GreenBanner'
 
 
 
@@ -18,8 +19,8 @@ export default function HomePage() {
         <div class='flex justify-center mt-[-15px] '>
           <button className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">Request Appointment</button>
         </div>
-        <div></div>
       </div>
+      <GreenBanner></GreenBanner>
     </section>
   )
 }
