@@ -17,18 +17,39 @@ export default function header({route, changeRoute}) {
   const highlightCurLink = () => {
     if (route.route == "home") {
       // Apply UI Changes
+      homeBtn.current.style.color = "#0094DA";
+      aboutusBtn.current.style.color = "black";
+      servicesBtn.current.style.color = "black";
+      insuranceBtn.current.style.color = "black";
+      contactBtn.current.style.color = "black";
     }
     else if (route.route == "aboutus") {
-
+      homeBtn.current.style.color = "black";
+      aboutusBtn.current.style.color = "#0094DA";
+      servicesBtn.current.style.color = "black";
+      insuranceBtn.current.style.color = "black";
+      contactBtn.current.style.color = "black";
     }
     else if (route.route == "services") {
-      
+      homeBtn.current.style.color = "black";
+      aboutusBtn.current.style.color = "black";
+      servicesBtn.current.style.color = "#0094DA";
+      insuranceBtn.current.style.color = "black";
+      contactBtn.current.style.color = "black";
     }
     else if (route.route == "insurance") {
-      
+      homeBtn.current.style.color = "black";
+      aboutusBtn.current.style.color = "black";
+      servicesBtn.current.style.color = "black";
+      insuranceBtn.current.style.color = "#0094DA";
+      contactBtn.current.style.color = "black";
     }
     else if (route.route == "contact") {
-      
+      homeBtn.current.style.color = "black";
+      aboutusBtn.current.style.color = "black";
+      servicesBtn.current.style.color = "black";
+      insuranceBtn.current.style.color = "black";
+      contactBtn.current.style.color = "#0094DA";
     }
   }
 
