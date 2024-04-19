@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from "@/components/Header"
 
-export default function Services() {
+export default function Services({route, changeRoute}) {
   return (
-    <div>Services</div>
+    <>
+        <Header route={route} changeRoute={changeRoute}/>
+    </>
   )
 }

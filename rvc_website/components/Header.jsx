@@ -12,7 +12,7 @@ export default function header({route, changeRoute}) {
 
   useEffect(() => {
     highlightCurLink();
-  }, [])
+  }, [route])
 
   const highlightCurLink = () => {
     if (route.route == "home") {

@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from "@/components/Header"
 
-export default function Contact() {
+export default function Contact({route, changeRoute}) {
   return (
-    <div>Contact</div>
+    <>
+      <Header route={route} changeRoute={changeRoute}/>
+    </>
   )
 }

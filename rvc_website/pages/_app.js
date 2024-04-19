@@ -2,8 +2,15 @@ import '@/styles/globals.css'
 import { version } from "../package.json";
 import Head from "next/head"
 import favicon from '../public/favicon.ico';
+import { useState } from "react"
 
-export default function App({ Component, pageProps }) {
+
+
+export default function App({ Component }) {
+  const [route, setRoute] = useState({route: "home"})
+  const changeRoute = (route) => {
+    setRoute(route);
+  }
   return (
     <>
         <Head>
@@ -17,7 +24,7 @@ export default function App({ Component, pageProps }) {
             @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
           </style>
         </Head>
-        <Component {...pageProps} />
+        <Component route={route} changeRoute={changeRoute} />
     </>
   )
 }

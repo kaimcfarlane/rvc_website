@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from "@/components/Header"
 
-export default function Insurance() {
+export default function Insurance({route, changeRoute}) {
   return (
-    <div>insurance</div>
+    <>
+        <Header route={route} changeRoute={changeRoute}/>
+    </>
   )
 }
