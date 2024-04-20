@@ -9,7 +9,8 @@ import { useState } from "react"
 export default function App({ Component }) {
   const [route, setRoute] = useState({route: "home"})
   const changeRoute = (route) => {
-    setRoute(route);
+    console.log("Route is being changed to: " + route);
+    setRoute({route: route});
   }
   return (
     <>
