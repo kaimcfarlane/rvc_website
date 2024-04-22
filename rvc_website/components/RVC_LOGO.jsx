@@ -8,7 +8,7 @@ export default function RVC_LOGO() {
     // Div below needs to be %5
     <div class="left-[2%] relative">
     <a href=''>
-    <Image src={rvc_logo_img} width={100} height={100} alt='RVC_Logo '></Image>
+    <Image src={rvc_logo_img} width={100} height={100} alt='RVC_Logo'></Image>
     </a>
     </div>
   )
