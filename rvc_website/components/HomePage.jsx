@@ -2,7 +2,7 @@ import React from 'react'
 import rvc_offiefloor from '../public/rvc_office/rvc_officefloor.jpeg'
 import { useRef } from 'react'
 import GreenBanner from './GreenBanner'
-
+import ContactModal from './ContactModal'
 
 
 
@@ -17,7 +17,8 @@ export default function HomePage() {
           <div class='mr-[2%]'>DIFFERENCE</div>
         </div>
         <div class='flex justify-center mt-[-15px] '>
-          <button className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">Request Appointment</button>
+          <button onClick={()=>document.getElementById('my_modal_1').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">Request Appointment</button>
+          <dialog id="my_modal_1" className="modal"><ContactModal></ContactModal></dialog>
         </div>
       </div>
       <GreenBanner></GreenBanner>
