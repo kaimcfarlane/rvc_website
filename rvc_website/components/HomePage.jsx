@@ -8,7 +8,7 @@ import GreenBanner from './GreenBanner'
 
 export default function HomePage() {
   return (
-    <section class="bg-[url('../public/rvc_office/rvc_officefloor.jpeg')] bg-cover bg-center h-[100vh] w-[100%] fixed">
+    <section class="bg-[url('../public/rvc_office/rvc_officefloor.jpeg')] bg-cover bg-center h-[100vh] w-[100%] absolute">
       <div class='bg-opaque_white w-[530px] h-[140px] static ml-[60%] mt-[32%] rounded-md shadow-md'>
         <div class='flex text-black justify-center font-<K2D> text-3xl pt-[20px] pb-[27px]'>
           <div class='mr-[2%]'>COME</div>
