@@ -55,7 +55,7 @@ export default function header({route, changeRoute}) {
   }
 
   return (
-    <section class="flex flex-row justify-between bg-white fixed w-full z-[1] top-[0%]">
+    <section class="flex flex-row justify-between bg-white fixed w-full z-[1] top-[0%] shadow-md">
         <RVC_LOGO></RVC_LOGO>
         <div id='page_links' class="flex items-center w-6/12 justify-around text-black">
             <Link href="/">
