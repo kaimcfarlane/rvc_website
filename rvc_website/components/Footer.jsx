@@ -3,6 +3,7 @@ import Image from 'next/image'
 import RVC_ICON from './RVC_ICON'
 
 export default function Footer() {
+
   return (
     <div class="w-[100%] absolute top-[100%]">
         <footer className="footer p-10 bg-white text-base-content">
