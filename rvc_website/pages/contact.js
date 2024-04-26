@@ -8,7 +8,7 @@ export default function Contact({route, changeRoute}) {
     <>
       <Header route={route} changeRoute={changeRoute}/>
       <ContactPage></ContactPage>
-      <Footer></Footer>
+      <Footer background={"blue"}/>
     </>
   )
 }

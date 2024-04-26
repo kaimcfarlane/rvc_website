@@ -1,34 +1,67 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import RVC_ICON from './RVC_ICON'
 
-export default function Footer() {
+export default function Footer({background}) {
+
+  const footerTopContainer = useRef();
+  const footerBotContainer = useRef();
+  const footerTitle = useRef();
+
+  const blue = "#0094DA";
+  const white = "#FFFFFF";
+
+  let footerTitleClass = "opacity-80";
+
+  // Below is not updating correclty becuase we cna't make the passed in value for footerTitleClass above be updated after intialization with the code we have. Also need to change the bold and also need to deal with logo not showing correctly.
+
+  const changeFooterColor = () => {
+    if (background == "white") {
+        footerTopContainer.current.style.backgroundColor = white;
+        footerBotContainer.current.style.backgroundColor = white;
+        // footerTitleClass = "opacity-0";
+    }
+    else if (background == "blue") {
+        footerTopContainer.current.style.backgroundColor = blue;
+        footerBotContainer.current.style.backgroundColor = blue;
+        footerTopContainer.current.style.color = white;
+        footerBotContainer.current.style.color = white;
+        // footerTitleClass = "opacity-100";
+    }
+    console.log(background);
+  }
+
+  
+
+  useEffect(() => {
+    changeFooterColor();
+  }, [])
 
   return (
     <div class="w-[100%] absolute top-[100%]">
-        <footer className="footer p-10 bg-white text-base-content">
+        <footer ref={footerTopContainer} className="footer p-10 bg-white text-base-content">
         <nav>
-            <h6 className="footer-title">Services</h6> 
+            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Services</h6> 
             <a className="link link-hover">Branding</a>
             <a className="link link-hover">Design</a>
             <a className="link link-hover">Marketing</a>
             <a className="link link-hover">Advertisement</a>
         </nav> 
         <nav>
-            <h6 className="footer-title">Company</h6> 
+            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Company</h6> 
             <a className="link link-hover">About us</a>
             <a className="link link-hover">Contact</a>
             <a className="link link-hover">Jobs</a>
             <a className="link link-hover">Press kit</a>
         </nav> 
         <nav>
-            <h6 className="footer-title">Legal</h6> 
+            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Legal</h6> 
             <a className="link link-hover">Terms of use</a>
             <a className="link link-hover">Privacy policy</a>
             <a className="link link-hover">Cookie policy</a>
         </nav>
         </footer> 
-        <footer className="footer px-10 py-4 border-t bg-white text-base-content border-base-300">
+        <footer ref={footerBotContainer} className="footer px-10 py-4 border-t bg-white text-base-content border-base-300">
         <aside className="items-center grid-flow-col">
             <RVC_ICON></RVC_ICON>
             <p>Reese Vision Care Opt. <br/>Providing quality eye care since 2004</p>

@@ -8,7 +8,7 @@ export default function Insurance({route, changeRoute}) {
     <>
         <Header route={route} changeRoute={changeRoute}/>
         <InsurancePage></InsurancePage>
-        <Footer></Footer>
+        <Footer background={"blue"}/>
     </>
   )
 }

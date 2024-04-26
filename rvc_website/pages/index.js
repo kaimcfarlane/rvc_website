@@ -8,7 +8,7 @@ export default function Home({route, changeRoute}) {
     <main class="overflow-y-scroll">
       <Header route={route} changeRoute={changeRoute}/>
       <HomePage/>
-      <Footer/>
+      <Footer background={"white"}/>
     </main>
   )
 }
