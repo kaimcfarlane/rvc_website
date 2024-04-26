@@ -63,7 +63,7 @@ export default function Footer({background}) {
         </footer> 
         <footer ref={footerBotContainer} className="footer px-10 py-4 border-t bg-white text-base-content border-base-300">
         <aside className="items-center grid-flow-col">
-            <RVC_ICON></RVC_ICON>
+            <RVC_ICON background={background} white={white}></RVC_ICON>
             <p>Reese Vision Care Opt. <br/>Providing quality eye care since 2004</p>
         </aside> 
         <nav className="md:place-self-center md:justify-self-end">
