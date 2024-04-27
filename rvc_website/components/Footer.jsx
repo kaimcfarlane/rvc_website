@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import RVC_ICON from './RVC_ICON'
 
-export default function Footer({background}) {
+export default function Footer({background, pages}) {
 
   const footerTopContainer = useRef();
   const footerBotContainer = useRef();
@@ -12,6 +12,8 @@ export default function Footer({background}) {
   const white = "#FFFFFF";
 
   let footerTitleClass = "opacity-80";
+
+  const [footerPosition, setPosition] = useState(1);
 
   // Below is not updating correclty becuase we cna't make the passed in value for footerTitleClass above be updated after intialization with the code we have. Also need to change the bold and also need to deal with logo not showing correctly.
 
@@ -31,14 +33,19 @@ export default function Footer({background}) {
     console.log(background);
   }
 
-  
+  const setFooterPosition = () => {
+    console.log(pages);
+    let top = (pages*100).toString() + "%";
+    setPosition(top);
+  }
 
   useEffect(() => {
     changeFooterColor();
+    setFooterPosition();
   }, [])
 
   return (
-    <div class="w-[100%] absolute top-[100%]">
+    <div class="w-[100%] absolute" style={{top: footerPosition}}>
         <footer ref={footerTopContainer} className="footer p-10 bg-white text-base-content">
         <nav>
             <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Services</h6> 
