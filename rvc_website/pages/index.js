@@ -2,11 +2,11 @@ import Header from "@/components/Header"
 import HomePage from "@/components/HomePage"
 import Footer from "@/components/Footer"
 
-export default function Home({route, changeRoute}) {
+export default function Home({route_obj, changeRoute}) {
 
   return (
     <main class="overflow-y-scroll">
-      <Header route={route} changeRoute={changeRoute}/>
+      <Header route_obj={route_obj} changeRoute={changeRoute}/>
       <HomePage/>
       <Footer background={"white"} pages={1}/>
     </main>

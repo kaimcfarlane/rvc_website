@@ -34,9 +34,9 @@ export default function AboutPage() {
     </section>
     <section class="top-[100%] h-[100vh] w-[100%] absolute">
       <div>
-        <Image src={DoctorHeadshot} class="w-[350px] h-[500px] z-1 absolute top-[25%] left-[65%] border-solid border-secondary rounded-lg border-4 shadow-lg" alt='DocPatientPic1'></Image>
+        <Image src={DoctorHeadshot} class="w-[350px] h-[500px] z-1 absolute top-[21%] left-[65%] border-solid border-secondary rounded-lg border-4 shadow-lg" alt='DocPatientPic1'></Image>
       </div>
-      <div class='w-[45%] h-[50%] p-[20px] static ml-[10%] mt-[15%] rounded-md justify-center'>
+      <div class='w-[45%] h-[50%] p-[20px] static ml-[10%] mt-[14%] rounded-md justify-center'>
         <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
             <div class="flex flex-row pb-[10px] w-[100%] justify-left">
             <div class="mr-[2%]">Melanie Reese</div>

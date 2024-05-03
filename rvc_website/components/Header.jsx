@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import RVC_LOGO from './RVC_LOGO'
 import Link from 'next/link'
 
-export default function header({route, changeRoute}) {
+export default function header({route_obj, changeRoute}) {
 
   const homeBtn = useRef();
   const aboutusBtn = useRef();
@@ -11,12 +11,13 @@ export default function header({route, changeRoute}) {
   const contactBtn = useRef();
 
   useEffect(() => {
-    console.log("Route changed to: " + route.route);
+    console.log("Route changed to: " + route_obj.route_name);
+    console.log("Changing highlight to " + route_obj.route_name);
     highlightCurLink();
-  }, [route])
+  }, [route_obj.route_name]);
 
   const highlightCurLink = () => {
-    if (route.route == "home") {
+    if (route_obj.route_name == "home") {
       // Apply UI Changes
       homeBtn.current.style.color = "#0094DA";
       aboutusBtn.current.style.color = "black";
@@ -24,28 +25,28 @@ export default function header({route, changeRoute}) {
       insuranceBtn.current.style.color = "black";
       contactBtn.current.style.color = "black";
     }
-    else if (route.route == "aboutus") {
+    else if (route_obj.route_name == "aboutus") {
       homeBtn.current.style.color = "black";
       aboutusBtn.current.style.color = "#0094DA";
       servicesBtn.current.style.color = "black";
       insuranceBtn.current.style.color = "black";
       contactBtn.current.style.color = "black";
     }
-    else if (route.route == "services") {
+    else if (route_obj.route_name == "services") {
       homeBtn.current.style.color = "black";
       aboutusBtn.current.style.color = "black";
       servicesBtn.current.style.color = "#0094DA";
       insuranceBtn.current.style.color = "black";
       contactBtn.current.style.color = "black";
     }
-    else if (route.route == "insurance") {
+    else if (route_obj.route_name == "insurance") {
       homeBtn.current.style.color = "black";
       aboutusBtn.current.style.color = "black";
       servicesBtn.current.style.color = "black";
       insuranceBtn.current.style.color = "#0094DA";
       contactBtn.current.style.color = "black";
     }
-    else if (route.route == "contact") {
+    else if (route_obj.route_name == "contact") {
       homeBtn.current.style.color = "black";
       aboutusBtn.current.style.color = "black";
       servicesBtn.current.style.color = "black";
