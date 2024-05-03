@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import DocPatient_pic2 from '../public/rvc_glasses/doc_patient2.jpg'
+import DocPatient_pic3 from '../public/rvc_glasses/doc_patient1.jpg'
 import BlueRectangle from '../public/gen_icons/blue_rectangle_background.png'
 import GreenRectangleBanner from '@/components/GreenRectangleBanner'
 
@@ -39,7 +40,24 @@ export default function ServicesPage() {
                 </div>
             </div>
         </div>
-        <GreenRectangleBanner></GreenRectangleBanner>
+        <GreenRectangleBanner text={"During a complete eye exam, in addition to checking for changes in your vision and updating your prescription, Dr. Reese will also assess the overall health of your eyes."}></GreenRectangleBanner>
+        </section>
+        <section class="top-[100%] h-[100vh] w-[100%] absolute">
+            <div>
+                <Image src={BlueRectangle} class="w-[600px] h-[400px] z-1 absolute top-[16.3%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
+                <Image src={DocPatient_pic3} class="w-[600px] h-[400px] z-1 absolute top-[15%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
+            </div>
+            <div class='w-[30%] h-[50%] p-[20px] static ml-[10%] mt-[10%] rounded-md justify-center'>
+                <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+                    <div class="flex flex-row pb-[10px] w-[100%] justify-left">
+                    <div class="mr-[2%] text-secondary text-4xl">Pediatric Exams</div>
+                    </div>
+                    <div class="flex flex-col w-[100%] justify-left mb-[10px]">
+                        <div class="text-lg mb-[10px]">Approximately 25% of school-aged children have vision problems. All children should have a comprehensive eye exam before age 3.  It is very important for parents to know that vision screenings performed at school or by a pediatrician are not substitutes for a comprehensive eye exam.  At Reese Vision Care, we see children age 3 years and older.</div>
+                    </div>
+                </div>
+            </div>
+            <GreenRectangleBanner text={"We have lots of frames that look cool and fit well so kids actually love their glasses! We use durable products and safe polycarbonate lenses.  We also offer contact lenses for children.  Disposable contact lenses are safer and more convenient making them a great option for kids, especially for sports and other activities."}></GreenRectangleBanner>
         </section>
     </>
   )
