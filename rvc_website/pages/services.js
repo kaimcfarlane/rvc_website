@@ -8,7 +8,7 @@ export default function Services({route_obj, changeRoute}) {
     <>
         <Header route_obj={route_obj} changeRoute={changeRoute}/>
         <ServicesPage></ServicesPage>
-        <Footer background={"blue"} pages={1}/>
+        <Footer background={"blue"} pages={2}/>
     </>
   )
 }

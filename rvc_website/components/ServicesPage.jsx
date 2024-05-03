@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import DocPatient_pic2 from '../public/rvc_glasses/doc_patient2.jpg'
 import BlueRectangle from '../public/gen_icons/blue_rectangle_background.png'
+import GreenRectangleBanner from '@/components/GreenRectangleBanner'
 
 export default function ServicesPage() {
   return (
@@ -38,6 +39,7 @@ export default function ServicesPage() {
                 </div>
             </div>
         </div>
+        <GreenRectangleBanner></GreenRectangleBanner>
         </section>
     </>
   )

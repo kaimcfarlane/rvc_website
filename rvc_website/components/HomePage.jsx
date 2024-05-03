@@ -1,7 +1,7 @@
 import React from 'react'
 import rvc_offiefloor from '../public/rvc_office/rvc_officefloor.jpeg'
 import { useRef } from 'react'
-import GreenBanner from './GreenBanner'
+import GreenCircleBanner from './GreenBanner'
 import ContactModal from './ContactModal'
 
 
@@ -21,7 +21,7 @@ export default function HomePage() {
           <dialog id="my_modal_1" className="modal"><ContactModal></ContactModal></dialog>
         </div>
       </div>
-      <GreenBanner></GreenBanner>
+      <GreenCircleBanner></GreenCircleBanner>
     </section>
   )
 }
