@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import RVC_ICON from './RVC_ICON'
 
 export default function Footer({background, pages}) {
@@ -56,8 +57,8 @@ export default function Footer({background, pages}) {
         </nav> 
         <nav>
             <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Company</h6> 
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
+            <a className="link link-hover"><Link href="/aboutus">About us</Link></a>
+            <a className="link link-hover"><Link href="/contact">Contact</Link></a>
             <a className="link link-hover">Jobs</a>
             <a className="link link-hover">Press kit</a>
         </nav> 
