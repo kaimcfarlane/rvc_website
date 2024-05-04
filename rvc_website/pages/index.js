@@ -8,7 +8,7 @@ export default function Home({route_obj, changeRoute}) {
     <main class="overflow-y-scroll">
       <Header route_obj={route_obj} changeRoute={changeRoute}/>
       <HomePage/>
-      <Footer background={"white"} pages={1}/>
+      <Footer changeRoute={changeRoute} background={"white"} pages={1}/>
     </main>
   )
 }

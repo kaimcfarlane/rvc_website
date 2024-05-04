@@ -8,7 +8,7 @@ export default function AboutUs({route_obj, changeRoute}) {
     <main class="overflow-y-scroll">
       <Header route_obj={route_obj} changeRoute={changeRoute}/>
       <AboutPage/>
-      <Footer background={"blue"} pages={2}/>
+      <Footer changeRoute={changeRoute} background={"blue"} pages={2}/>
     </main>
   )
 }

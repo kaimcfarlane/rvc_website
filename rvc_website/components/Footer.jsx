@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import RVC_ICON from './RVC_ICON'
 
-export default function Footer({background, pages}) {
+export default function Footer({changeRoute, background, pages}) {
 
   const footerTopContainer = useRef();
   const footerBotContainer = useRef();
@@ -57,10 +57,18 @@ export default function Footer({background, pages}) {
         </nav> 
         <nav>
             <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Company</h6> 
-            <a className="link link-hover"><Link href="/aboutus">About us</Link></a>
-            <a className="link link-hover"><Link href="/contact">Contact</Link></a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <Link href="aboutus">
+              <div onClick={() => changeRoute("aboutus")} className="link link-hover">About us</div>
+            </Link>
+            <Link href="/contact">
+              <div onClick={() => changeRoute("contact")} className="link link-hover">Contact</div>
+            </Link>
+            <Link href="/">
+              <div className="link link-hover">Jobs</div>
+            </Link>
+            <Link href="/">
+              <div className="link link-hover">Press kit</div>
+            </Link>
         </nav> 
         <nav>
             <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Legal</h6> 
