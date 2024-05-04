@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/Image'
+import Image from 'next/image'
 import glasses_1 from "../public/gen_icons/glasses_icon_1.png"
 import glasses_2 from "../public/gen_icons/glasses_icon_2.png"
 import blue_ellipse from "../public/gen_icons/ellipse_blue_1.png"

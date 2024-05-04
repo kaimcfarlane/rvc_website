@@ -18,7 +18,7 @@ export default function HomePage() {
         </div>
         <div class='flex justify-center mt-[-15px] '>
           <button onClick={()=>document.getElementById('my_modal_1').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">Request Appointment</button>
-          <dialog id="my_modal_1" className="modal"><ContactModal></ContactModal></dialog>
+          <dialog id="my_modal_1" className="modal"><ContactModal text={"Fill out form to request an appointment"}></ContactModal></dialog>
         </div>
       </div>
       <GreenCircleBanner></GreenCircleBanner>

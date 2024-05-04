@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import RVC_LOGO from './RVC_LOGO'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+
 
 export default function header({route_obj, changeRoute}) {
 
@@ -10,10 +12,21 @@ export default function header({route_obj, changeRoute}) {
   const insuranceBtn = useRef();
   const contactBtn = useRef();
 
+  const router = useRouter()
+
   useEffect(() => {
     console.log("Route changed to: " + route_obj.route_name);
     console.log("Changing highlight to " + route_obj.route_name);
     highlightCurLink();
+    if (window.location.href.includes(route_obj.route_name)) {
+      return;
+    }
+    else if (route_obj.route_name == "home") {
+      router.push('/');
+    }
+    else {
+      router.push('/' + route_obj.route_name);
+    }
   }, [route_obj.route_name]);
 
   const highlightCurLink = () => {
