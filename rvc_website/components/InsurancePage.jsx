@@ -15,8 +15,8 @@ export default function InsurancePage() {
         <div>
             <Image src={glasses_1} class="w-[200px] h-[200px] z-1 absolute top-[5%] left-[-2%] brightness-125" alt='DocPatientPic2'></Image>
             <Image src={green_ellipse} class="w-[200px] h-[200px] z-1 absolute top-[3%] left-[-3%]" alt='BlueRectagneBackground'></Image>
-            <Image src={blue_ellipse} class="w-[600px] h-[400px] z-1 absolute top-[34.3%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
-            <Image src={glasses_2} class="w-[600px] h-[400px] z-1 absolute top-[5%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
+            <Image src={glasses_2} class="w-[200px] h-[200px] z-1 absolute bottom-[-2%] right-[-1%] brightness-125 rotate-[10deg]" alt='DocPatientPic2'></Image>
+            <Image src={blue_ellipse} class="w-[200px] h-[200px] z-1 absolute bottom-[-4%] right-[-2%]" alt='BlueRectagneBackground'></Image>
         </div>
         <div class='pl-[7%] pr-[7%] static mt-[16%] rounded-md justify-center'>
             <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
