@@ -90,6 +90,16 @@ export default function ServicesPage() {
                     </div>
                     <div class="flex flex-col w-[100%] justify-left mb-[10px]">
                         <div class="text-lg mb-[10px]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
+                        <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">View Supported Brands</button>
+                        <dialog id="brands_modal" className="modal">
+                        <div className="modal-box">
+                            <h3 className="font-bold text-lg text-black">GLASSES</h3>
+                            <p className="py-4 text-black">glasses are here</p>
+                        </div>
+                        <form method="dialog" className="modal-backdrop">
+                            <button>close</button>
+                        </form>
+                        </dialog>
                     </div>
                 </div>
             </div>
