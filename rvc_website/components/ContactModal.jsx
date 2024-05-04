@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import mail_icon from '../public/gen_icons/mail_icon_1.png'
 
-export default function ContactModal({text}) {
+export default function ContactModal({text, placeholder}) {
   return (
     <>
     <div className="modal-box">
@@ -21,7 +21,7 @@ export default function ContactModal({text}) {
                 <input type="email" className="grow text-black" placeholder="Email" name='email' />
             </label>
             <label className="input input-bordered flex items-center gap-2 mb-[10px]">
-                <input class="text-black" type="text" placeholder="Appointment Request" name='request' />
+                <input class="text-black" type="text" placeholder={placeholder} name='request' />
             </label>
             <input type="hidden" name="_autoresponse" value="We have recieved your request and will reach back out soon, thank you! - Reese Vision Care"></input>
             <button className="btn" type="submit">Send</button>
