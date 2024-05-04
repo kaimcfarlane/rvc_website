@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import ContactModal from './ContactModal'
 import RVC_ICON from './RVC_ICON'
 import email_icon from '../public/gen_icons/email_icon_4.svg'
 import phone_icon from '../public/gen_icons/phone_icon_1.svg'
@@ -73,9 +74,8 @@ export default function Footer({changeRoute, background, pages}) {
             <Link href="/contact">
               <div onClick={() => changeRoute("contact")} className="link link-hover">Contact</div>
             </Link>
-            <Link href="/" target="_blank">
-              <div className="link link-hover">Jobs</div>
-            </Link>
+            <div onClick={()=>document.getElementById('job_modal').showModal()} className="link link-hover">Jobs</div>
+            <dialog id="job_modal" className="modal"><ContactModal text={"Fill out form to send your job application"} placeholder={"Job Request"} isJobForm={true}></ContactModal></dialog>
             <Link href="http://maps.google.com/?q=3801 N University Drive, Suite 301 Sunrise, FL 33351" target="_blank">
               <div className="link link-hover">Address</div>
             </Link>

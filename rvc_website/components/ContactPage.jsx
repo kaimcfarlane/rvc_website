@@ -13,7 +13,7 @@ export default function ContactPage() {
         </div>
         <div class="absolute ml-[10%] mt-[16%]">
           <button onClick={()=>document.getElementById('my_modal_1').showModal()} className="btn btn-wide btn-secondary text-white font-<K2D> text-lg normal-case font-normal">Have a Request?</button>
-          <dialog id="my_modal_1" className="modal"><ContactModal text={"Fill out form below to send us a message"} placeholder={"Message"}></ContactModal></dialog>
+          <dialog id="my_modal_1" className="modal"><ContactModal text={"Fill out form below to send us a message"} placeholder={"Message"} isJobForm={false}></ContactModal></dialog>
         </div>
         <div className='card w-96 bg-primary shadow-xl static ml-[10%] mt-[21%] justify-center p-[1%]'>
           {/* <div class="flex flex-row pb-[10px] w-[100%] justify-left">
