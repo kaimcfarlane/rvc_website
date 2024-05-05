@@ -3,8 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ContactModal from './ContactModal'
 import RVC_ICON from './RVC_ICON'
-import email_icon from '../public/gen_icons/email_icon_5.png'
-import phone_icon from '../public/gen_icons/phone_icon_3.png'
+import white_email_icon from '../public/gen_icons/email_icon_5.png'
+import white_phone_icon from '../public/gen_icons/phone_icon_3.png'
+import black_email_icon from '../public/gen_icons/email_icon_7.svg'
+import black_phone_icon from '../public/gen_icons/phone_icon_4.svg'
 
 export default function Footer({changeRoute, background, pages}) {
 
@@ -75,8 +77,8 @@ export default function Footer({changeRoute, background, pages}) {
               <div onClick={() => changeRoute("contact")} className="link link-hover">Contact</div>
             </Link>
             <div onClick={()=>document.getElementById('job_modal').showModal()} className="link link-hover">Jobs</div>
-            <dialog id="job_modal" className="modal"><ContactModal text={"Fill out form to send your job application"} placeholder={"Job Request"} isJobForm={true}></ContactModal></dialog>
-            <Link href="http://maps.google.com/?q=3801 N University Drive, Suite 301 Sunrise, FL 33351" target="_blank">
+            <dialog id="job_modal" className="modal"><ContactModal text={"Fill out form and attach resume to send your job application. (PDF Only)"} placeholder={"Job Request"} isJobForm={true}></ContactModal></dialog>
+            <Link href="http://maps.google.com/?q=Reese Vision Care" target="_blank">
               <div className="link link-hover">Address</div>
             </Link>
         </nav> 
@@ -125,10 +127,10 @@ export default function Footer({changeRoute, background, pages}) {
               <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></div>
             </Link>
             <Link href="mailto:reesevisioncontacts@gmail.com" target="_blank">
-              <div><Image src={email_icon} width="33" height="33" viewBox="0 0 24 24" className="fill-current"></Image></div>
+              <div><Image src={background == 'white' ? black_email_icon : white_email_icon} width="33" height="33" viewBox="0 0 24 24" className="fill-current"></Image></div>
             </Link>
             <Link href="tel:9547464009" target="_blank">
-              <div><Image src={phone_icon} width="24" height="24" viewBox="0 0 24 24" className="fill-current"></Image></div>
+              <div><Image src={background == 'white' ? black_phone_icon : white_phone_icon} width="24" height="24" viewBox="0 0 24 24" className="fill-current"></Image></div>
             </Link>
             </div>
         </nav>

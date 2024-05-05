@@ -5,6 +5,13 @@ import DocPatient_pic3 from '../public/rvc_glasses/doc_patient1.jpg'
 import ContactsRoom_pic1 from '../public/rvc_office/rvc_contactcenter3.jpg'
 import RVCGlassesRoom_pic1 from '../public/rvc_glasses/rvc_glasseswall2.jpg'
 import BlueRectangle from '../public/gen_icons/blue_rectangle_background.png'
+import Gucci_Logo from '../public/gen_icons/gucci_logo_1.svg'
+import Prada_Logo from '../public/gen_icons/prada_logo_1.svg'
+import Armani_Logo from '../public/gen_icons/armani_logo_2.svg'
+import Burberry_Logo from '../public/gen_icons/burberry_logo_1.svg'
+import CalvinClien_Logo from '../public/gen_icons/calvinklien_logo_1.svg'
+import Coach_Logo from '../public/gen_icons/coach_logo_2.svg'
+import DocleAndGabbana_Logo from '../public/gen_icons/docleandgabbanna_logo_1.svg'
 import GreenRectangleBanner from '@/components/GreenRectangleBanner'
 
 export default function ServicesPage() {
@@ -92,9 +99,23 @@ export default function ServicesPage() {
                         <div class="text-lg mb-[10px]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
                         <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">View Supported Brands</button>
                         <dialog id="brands_modal" className="modal">
-                        <div className="modal-box">
-                            <h3 className="font-bold text-lg text-black">GLASSES</h3>
-                            <p className="py-4 text-black">glasses are here</p>
+                        <div className="modal-box flex flex-col items-center">
+                            <div class="flex">
+                                <Image width="100" height="100" src={Gucci_Logo}></Image>
+                                <Image width="100" height="100" src={Prada_Logo}></Image>
+                                <Image width="100" height="100" src={Armani_Logo}></Image>
+                                <Image width="100" height="100" src={DocleAndGabbana_Logo}></Image>
+                            </div>
+                            <div class="flex">
+                                <Image width="100" height="100" src={Burberry_Logo}></Image>
+                                <Image width="100" height="100" src={CalvinClien_Logo}></Image>
+                                <Image width="100" height="100" src={Coach_Logo}></Image>
+                            </div>
+                            <div class="flex">
+
+                            </div>
+                            {/* <h3 className="font-bold text-lg text-black">GLASSES</h3>
+                            <p className="py-4 text-black">glasses are here</p> */}
                         </div>
                         <form method="dialog" className="modal-backdrop">
                             <button>close</button>
