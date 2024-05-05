@@ -6,9 +6,28 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
+      mytheme: {
+        "primary": "#0094DA",
+        "secondary": "#22c55e",
+        "accent": "#FFFFFF",
+        "neutral": "#000000",
+        "base-100": "#000000"
+      },
+    },
     fontFamily: {
       'nunito': ['nunito', 'sans-serif'],
       'K2D': ['K2D', 'sans-serif'] // Ensure fonts with spaces have " " surrounding it.
+    },
+    colors: {
+      primary: '#0094DA', // Blue
+      primary_daisy: '#377cfb', // Green
+      secondary: '#22c55e', // Green
+      secondary_daisy: '#66cc8a', // Blue
+      exact_secondary: '#85B446',
+      white: '#FFFFFF',
+      opaque_white: "rgb(255 255 255 / 90%)",
+      black: '#000000',
     },
     extend: {
       backgroundImage: {
@@ -20,6 +39,16 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: [],
+    themes: [
+      {
+      'mytheme': {
+          'primary': '#0094DA',
+          'secondary': '#22c55e',
+          'accent': '#FFFFFF',
+          'neutral': '#FFFFFF',
+          'base-100': '#ffffff'
+        },
+      },
+    ],
   },
 }
