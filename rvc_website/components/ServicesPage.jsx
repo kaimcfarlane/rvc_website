@@ -7,11 +7,16 @@ import RVCGlassesRoom_pic1 from '../public/rvc_glasses/rvc_glasseswall2.jpg'
 import BlueRectangle from '../public/gen_icons/blue_rectangle_background.png'
 import Gucci_Logo from '../public/gen_icons/gucci_logo_1.svg'
 import Prada_Logo from '../public/gen_icons/prada_logo_1.svg'
-import Armani_Logo from '../public/gen_icons/armani_logo_2.svg'
+import Armani_Logo from '../public/gen_icons/armani_logo_3.svg'
 import Burberry_Logo from '../public/gen_icons/burberry_logo_1.svg'
 import CalvinClien_Logo from '../public/gen_icons/calvinklien_logo_1.svg'
 import Coach_Logo from '../public/gen_icons/coach_logo_2.svg'
 import DocleAndGabbana_Logo from '../public/gen_icons/docleandgabbanna_logo_1.svg'
+import Versace_Logo from '../public/gen_icons/versace_logo_1.svg'
+import Lacoste_Logo from '../public/gen_icons/lacoste_logo_1.svg'
+import Oakley_Logo from '../public/gen_icons/oakley_logo_1.svg'
+import MCM_Logo from '../public/gen_icons/mcm_logo_1.svg'
+import Guess_Logo from '../public/gen_icons/guess_logo_1.svg'
 import GreenRectangleBanner from '@/components/GreenRectangleBanner'
 
 export default function ServicesPage() {
@@ -99,20 +104,24 @@ export default function ServicesPage() {
                         <div class="text-lg mb-[10px]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
                         <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">View Supported Brands</button>
                         <dialog id="brands_modal" className="modal">
-                        <div className="modal-box flex flex-col items-center">
-                            <div class="flex">
+                        <div className="modal-box flex flex-col items-center max-w-[34rem]">
+                            <div class="flex mr-[5%]">
                                 <Image width="100" height="100" src={Gucci_Logo}></Image>
                                 <Image width="100" height="100" src={Prada_Logo}></Image>
-                                <Image width="100" height="100" src={Armani_Logo}></Image>
-                                <Image width="100" height="100" src={DocleAndGabbana_Logo}></Image>
+                                <Image class="mr-[4%]" width="85" height="85" src={Armani_Logo}></Image>
+                                <Image width="140" height="140" src={DocleAndGabbana_Logo}></Image>
                             </div>
-                            <div class="flex">
-                                <Image width="100" height="100" src={Burberry_Logo}></Image>
-                                <Image width="100" height="100" src={CalvinClien_Logo}></Image>
-                                <Image width="100" height="100" src={Coach_Logo}></Image>
+                            <div class="flex mr-[7%]">
+                                <Image class='mr-[3%]' width="150" height="150" src={Burberry_Logo}></Image>
+                                <Image class='mr-[3%]' width="100" height="100" src={CalvinClien_Logo}></Image>
+                                <Image class='mr-[3%]' width="100" height="100" src={Coach_Logo}></Image>
+                                <Image class='mr-[3%]' width="100" height="100" src={Guess_Logo}></Image>
                             </div>
-                            <div class="flex">
-
+                            <div class="flex mr-[14%]">
+                                <Image class='mr-[6%]' width="100" height="100" src={Oakley_Logo}></Image>
+                                <Image class='mr-[6%]' width="100" height="100" src={MCM_Logo}></Image>
+                                <Image class='mr-[6%]' width="100" height="100" src={Lacoste_Logo}></Image>
+                                <Image class='mr-[6%]' width="100" height="100" src={Versace_Logo}></Image>
                             </div>
                             {/* <h3 className="font-bold text-lg text-black">GLASSES</h3>
                             <p className="py-4 text-black">glasses are here</p> */}
