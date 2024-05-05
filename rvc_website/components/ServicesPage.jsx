@@ -105,11 +105,11 @@ export default function ServicesPage() {
                         <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">View Supported Brands</button>
                         <dialog id="brands_modal" className="modal">
                         <div className="modal-box flex flex-col items-center max-w-[34rem]">
-                            <div class="flex mr-[5%]">
-                                <Image width="100" height="100" src={Gucci_Logo}></Image>
-                                <Image width="100" height="100" src={Prada_Logo}></Image>
-                                <Image class="mr-[4%]" width="85" height="85" src={Armani_Logo}></Image>
-                                <Image width="140" height="140" src={DocleAndGabbana_Logo}></Image>
+                            <div class="flex mr-[20%]">
+                                <Image class="mr-[4%]" width="100" height="100" src={Gucci_Logo}></Image>
+                                <Image class="mr-[5%]" width="100" height="100" src={Prada_Logo}></Image>
+                                <Image class="mr-[9%]" width="85" height="85" src={Armani_Logo}></Image>
+                                <Image class="mr-[4%]" width="140" height="140" src={DocleAndGabbana_Logo}></Image>
                             </div>
                             <div class="flex mr-[7%]">
                                 <Image class='mr-[3%]' width="150" height="150" src={Burberry_Logo}></Image>
@@ -118,10 +118,10 @@ export default function ServicesPage() {
                                 <Image class='mr-[3%]' width="100" height="100" src={Guess_Logo}></Image>
                             </div>
                             <div class="flex mr-[14%]">
-                                <Image class='mr-[6%]' width="100" height="100" src={Oakley_Logo}></Image>
-                                <Image class='mr-[6%]' width="100" height="100" src={MCM_Logo}></Image>
-                                <Image class='mr-[6%]' width="100" height="100" src={Lacoste_Logo}></Image>
-                                <Image class='mr-[6%]' width="100" height="100" src={Versace_Logo}></Image>
+                                <Image class='mr-[7%]' width="100" height="100" src={Oakley_Logo}></Image>
+                                <Image class='mr-[7%]' width="100" height="100" src={MCM_Logo}></Image>
+                                <Image class='mr-[7%]' width="100" height="100" src={Lacoste_Logo}></Image>
+                                <Image class='mr-[7%]' width="100" height="100" src={Versace_Logo}></Image>
                             </div>
                             {/* <h3 className="font-bold text-lg text-black">GLASSES</h3>
                             <p className="py-4 text-black">glasses are here</p> */}
