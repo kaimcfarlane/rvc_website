@@ -63,8 +63,8 @@ export default function Footer({changeRoute, background, pages}) {
             <Link href="https://www.facebook.com/reesevisioncare/reviews" target="_blank">
               <div className="link link-hover">Reviews</div>
             </Link>
-            <Link href="https://www.facebook.com/reesevisioncare/photos" target="_blank">
-              <div className="link link-hover">Photos</div>
+            <Link href="mailto:reesevisioncontacts@gmail.com" target="_blank">
+              <div className="link link-hover">Email</div>
             </Link>
             <Link href="insurance">
               <div onClick={() => changeRoute("insurance")} className="link link-hover">Insurance</div>
@@ -140,5 +140,3 @@ export default function Footer({changeRoute, background, pages}) {
     </div>
   )
 }
-
-// mailto:reesevisioncontacts@gmail.com
