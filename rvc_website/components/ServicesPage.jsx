@@ -15,8 +15,9 @@ import DocleAndGabbana_Logo from '../public/gen_icons/docleandgabbanna_logo_1.sv
 import Versace_Logo from '../public/gen_icons/versace_logo_1.svg'
 import Lacoste_Logo from '../public/gen_icons/lacoste_logo_1.svg'
 import Oakley_Logo from '../public/gen_icons/oakley_logo_1.svg'
-import MCM_Logo from '../public/gen_icons/mcm_logo_1.svg'
+import MCM_Logo from '../public/gen_icons/mcm_logo_1.png'
 import Guess_Logo from '../public/gen_icons/guess_logo_1.svg'
+import RayBan_Logo from '../public/gen_icons/rayban_logo_1.svg'
 import GreenRectangleBanner from '@/components/GreenRectangleBanner'
 
 export default function ServicesPage() {
@@ -113,7 +114,7 @@ export default function ServicesPage() {
                             </div>
                             <div class="flex mr-[7%]">
                                 <Image class='mr-[3%]' width="150" height="150" src={Burberry_Logo}></Image>
-                                <Image class='mr-[3%]' width="100" height="100" src={CalvinClien_Logo}></Image>
+                                <Image class='mr-[3%]' width="100" height="100" src={RayBan_Logo}></Image>
                                 <Image class='mr-[3%]' width="100" height="100" src={Coach_Logo}></Image>
                                 <Image class='mr-[3%]' width="100" height="100" src={Guess_Logo}></Image>
                             </div>
