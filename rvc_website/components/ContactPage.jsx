@@ -24,7 +24,7 @@ export default function ContactPage() {
                   <div class="text-lg mb-[10px]">(954)-746-4009</div>
                   <div class="text-lg mb-[10px]">reesevisioncare@gmail.com</div>
                   <div class="text-lg mb-[10px]">3801 N University Dr #301, Sunrise, FL 33351</div>
-                  <div class="text-lg">General Optometry Hours:</div>
+                  <div class="text-lg">Hours:</div>
                 </div>
                 <div class="flex flex-row w-[100%] justify-left text-lg ml-[10%] text-white">
                     <ul class="list-disc">
@@ -33,7 +33,7 @@ export default function ContactPage() {
                         <li>Wednesday: 10AM-4PM</li>
                         <li>Thursday: 9AM-12PM, 1-6PM</li>
                         <li>Friday: 11AM-1PM, 2-7PM</li>
-                        <li>Saturday: 10AM-3PM</li>
+                        <li>Saturday: (By appointment only)</li>
                         <li>Sunday: Closed</li>
                     </ul>
                 </div>
