@@ -8,19 +8,32 @@ import EyeMedVision_logo from '../public/gen_icons/eyeMedVisionCare_insurance_lo
 import Surperior_logo from '../public/gen_icons/superiorVision_insurance_logo.png'
 import UnitedHealthCare_logo from '../public/gen_icons/unitedHealthCare_insurance_logo.webp'
 import Vsp_logo from '../public/gen_icons/vsp_insurance_logo.png'
+import Davis_logo from '../public/gen_icons/davisVision_insurance_logo.webp'
+import Cigna_logo from '../public/gen_icons/cigna_insurance_logo.png'
+
 
 export default function InsuranceLogoBar() {
   return (
     <>
-        <div class='flex justify-around'>
-            <Image class='w-[100px] h-[75px]' src={BCBS_logo} alt='BCBS_logo'></Image>
-            <Image class='w-[150px] h-[75px]' src={Humana_logo} alt='Humana_logo'></Image>
-            <Image class='w-[150px] h-[75px]' src={Solstice_logo} alt='Solstice_logo'></Image>
-            <Image class='w-[200px] h-[75px]' src={Spectera_logo} alt='Spectera_logo'></Image>
-            <Image class='w-[100px] h-[75px]' src={EyeMedVision_logo} alt='Humana_logo'></Image>
-            <Image class='w-[150px] h-[75px]' src={Surperior_logo} alt='Solstice_logo'></Image>
-            <Image class='w-[150px] h-[75px]' src={UnitedHealthCare_logo} alt='Spectera_logo'></Image>
-            <Image class='w-[150px] h-[75px]' src={Vsp_logo} alt='Spectera_logo'></Image>
+        <div className="collapse bg-white">
+            <input type="checkbox" /> 
+            <div className="collapse-title text-xl text-white bg-primary text-center font-medium">
+                View Accepted Insurance Providers
+            </div>
+            <div className="collapse-content shadow-xl"> 
+                <div class='flex justify-around'>
+                    <Image class='w-[75px] h-[50px]' src={BCBS_logo} alt='BCBS_logo'></Image>
+                    <Image class='w-[125px] h-[50px]' src={Humana_logo} alt='Humana_logo'></Image>
+                    <Image class='w-[120px] h-[50px]' src={Solstice_logo} alt='Solstice_logo'></Image>
+                    <Image class='w-[175px] h-[50px]' src={Spectera_logo} alt='Spectera_logo'></Image>
+                    <Image class='w-[75px] h-[50px]' src={EyeMedVision_logo} alt='Humana_logo'></Image>
+                    <Image class='w-[125px] h-[50px]' src={Surperior_logo} alt='Solstice_logo'></Image>
+                    <Image class='w-[125px] h-[50px]' src={UnitedHealthCare_logo} alt='Spectera_logo'></Image>
+                    <Image class='w-[125px] h-[50px]' src={Vsp_logo} alt='Spectera_logo'></Image>
+                    <Image class='w-[125px] h-[50px]' src={Davis_logo} alt='Spectera_logo'></Image>
+                    <Image class='w-[125px] h-[50px]' src={Cigna_logo} alt='Spectera_logo'></Image>
+                </div>
+            </div>
         </div>
     </>
   )

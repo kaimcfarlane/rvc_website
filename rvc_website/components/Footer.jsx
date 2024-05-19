@@ -9,6 +9,7 @@ import black_email_icon from '../public/gen_icons/email_icon_7.svg'
 import black_phone_icon from '../public/gen_icons/phone_icon_4.svg'
 import black_instagram_icon from '../public/gen_icons/black_instagram_logo_2.svg'
 import white_instagram_icon from '../public/gen_icons/white_instagram_logo_1.svg'
+import RequestBanner from './RequestBanner'
 
 export default function Footer({changeRoute, background, pages}) {
 
@@ -54,6 +55,9 @@ export default function Footer({changeRoute, background, pages}) {
 
   return (
     <div class="w-[100%] absolute" style={{top: footerPosition}}>
+      {
+        background == "blue" && <RequestBanner text={"Request an Appointment and See the Difference Now"}/>
+      }
         <footer ref={footerTopContainer} className="footer p-10 bg-white text-base-content">
         <nav>
             <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Information</h6> 
