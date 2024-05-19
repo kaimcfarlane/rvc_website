@@ -7,7 +7,7 @@ import white_email_icon from '../public/gen_icons/email_icon_5.png'
 import white_phone_icon from '../public/gen_icons/phone_icon_3.png'
 import black_email_icon from '../public/gen_icons/email_icon_7.svg'
 import black_phone_icon from '../public/gen_icons/phone_icon_4.svg'
-import black_instagram_icon from '../public/gen_icons/black_instagram_logo_1.svg'
+import black_instagram_icon from '../public/gen_icons/black_instagram_logo_2.svg'
 import white_instagram_icon from '../public/gen_icons/white_instagram_logo_1.svg'
 
 export default function Footer({changeRoute, background, pages}) {
@@ -123,6 +123,7 @@ export default function Footer({changeRoute, background, pages}) {
             <RVC_ICON background={background} white={white}></RVC_ICON>
             <p>Reese Vision Care <br/>Providing quality eye care since 2010</p>
         </aside> 
+        {/* Icons below use this color: #303030 */}
         <nav className="md:place-self-center md:justify-self-end">
             <div className="grid grid-flow-col gap-4 items-center">
             <Link href="https://www.facebook.com/reesevisioncare/" target="_blank">

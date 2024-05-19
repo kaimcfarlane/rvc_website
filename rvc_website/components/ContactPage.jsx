@@ -1,5 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import ContactModal from './ContactModal'
+import white_phone_icon from '../public/gen_icons/phone_icon_3.png'
+import white_email_icon from '../public/gen_icons/email_icon_5.png'
+import white_location_logo from '../public/gen_icons/white_location_logo_1.svg'
 
 export default function ContactPage() {
   return (
@@ -21,13 +26,28 @@ export default function ContactPage() {
           </div> */}
             <div className="card-body" class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl'>
                 <div class="flex flex-col w-[100%] justify-left mb-[10px] text-white ml-[3%]">
-                  <div class="text-lg mb-[10px]">(954)-746-4009</div>
-                  <div class="text-lg mb-[10px]">reesevisioncare@gmail.com</div>
-                  <div class="text-lg mb-[10px]">3801 N University Dr #301, Sunrise, FL 33351</div>
+                  <div class="flex">
+                    <Link href="tel:9547464009" target="_blank">
+                      <div><Image src={white_phone_icon} width="24" height="24" viewBox="0 0 24 24" className="fill-current mb-[3px] mt-[9%]"></Image></div>
+                    </Link>
+                    <div class="text-lg mb-[10px] ml-[4%]">(954)-746-4009</div>
+                  </div>
+                  <div class="flex">
+                    <Link href="mailto:reesevisioncontacts@gmail.com" target="_blank">
+                      <div><Image src={white_email_icon} width="29" height="29" viewBox="0 0 24 24" className="fill-current mb-[3px] mt-[9%]"></Image></div>
+                    </Link>
+                    <div class="text-lg mb-[10px] ml-[4%]">reesevisioncare@gmail.com</div>
+                  </div>
+                  <div class="flex">
+                    <Link href="http://maps.google.com/?q=Reese Vision Care" target="_blank">
+                        <div><Image src={white_location_logo} width="29" height="29" viewBox="0 0 24 24" className="fill-current mb-[3px] mt-[9%]"></Image></div>
+                    </Link>
+                    <div class="text-lg mb-[10px] ml-[4%]">3801 N University Dr #301, Sunrise, FL 33351</div>
+                  </div>
                   <div class="text-lg">Hours:</div>
                 </div>
-                <div class="flex flex-row w-[100%] justify-left text-lg ml-[10%] text-white">
-                    <ul class="list-disc">
+                <div class="flex flex-row w-[100%] justify-left text-lg ml-[3%] text-white">
+                    <ul class="list-none">
                         <li>Monday: 10AM-4PM</li>
                         <li>Tuesday: 9AM-12PM, 1-6PM</li>
                         <li>Wednesday: 10AM-4PM</li>

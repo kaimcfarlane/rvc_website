@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import InsuranceLogoBar from './InsuranceLogoBar'
 import glasses_1 from "../public/gen_icons/glasses_icon_1.png"
 import glasses_2 from "../public/gen_icons/glasses_icon_2.png"
 import blue_ellipse from "../public/gen_icons/ellipse_blue_1.png"
@@ -12,12 +13,13 @@ export default function InsurancePage() {
         <div class="absolute font-<K2D> text-6xl w-[100%] flex justify-center top-[15%]">
             <div class="text-black">Accepted <mark class="text-primary bg-transparent">Insurances</mark></div>
         </div>
-        <div>
+        {/* Background designs commented out below */}
+        {/* <div>
             <Image src={glasses_1} class="w-[200px] h-[200px] z-1 absolute top-[5%] left-[-2%] brightness-125" alt='DocPatientPic2'></Image>
             <Image src={green_ellipse} class="w-[200px] h-[200px] z-1 absolute top-[3%] left-[-3%]" alt='BlueRectagneBackground'></Image>
             <Image src={glasses_2} class="w-[200px] h-[200px] z-1 absolute bottom-[-2%] right-[-1%] brightness-125 rotate-[10deg]" alt='DocPatientPic2'></Image>
             <Image src={blue_ellipse} class="w-[200px] h-[200px] z-1 absolute bottom-[-4%] right-[-2%]" alt='BlueRectagneBackground'></Image>
-        </div>
+        </div> */}
         <div class='pl-[7%] pr-[7%] static mt-[16%] rounded-md justify-center'>
             <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
                 <div class="flex flex-row pb-[10px] w-[100%] justify-left">
@@ -48,6 +50,7 @@ export default function InsurancePage() {
                 </div>
             </div>
         </div>
+        <InsuranceLogoBar/>
       </section>
     </>
   )
