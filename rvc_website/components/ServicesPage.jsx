@@ -28,8 +28,8 @@ export default function ServicesPage() {
             <div class="text-black">Our <mark class="text-primary bg-transparent">Services</mark></div>
         </div>
         <div>
-            <Image src={BlueRectangle} class="w-[600px] h-[400px] z-1 absolute top-[34.3%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
-            <Image src={DocPatient_pic2} class="w-[600px] h-[400px] z-1 absolute top-[33%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
+            <Image src={BlueRectangle} class="w-[40%] h-[45%] z-1 absolute top-[34.3%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
+            <Image src={DocPatient_pic2} class="w-[40%] h-[45%] z-1 absolute top-[33%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
         </div>
         <div class='w-[30%] h-[50%] p-[20px] static ml-[10%] mt-[16%] rounded-md justify-center'>
             <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
@@ -59,8 +59,8 @@ export default function ServicesPage() {
         </section>
         <section class="top-[100%] h-[100vh] w-[100%] absolute">
             <div>
-                <Image src={BlueRectangle} class="w-[600px] h-[400px] z-1 absolute top-[16.3%] left-[10.7%]" alt='BlueRectagneBackground'></Image>
-                <Image src={DocPatient_pic3} class="w-[600px] h-[400px] z-1 absolute top-[15%] left-[10%] brightness-125" alt='DocPatientPic2'></Image>
+                <Image src={BlueRectangle} class="w-[42%] h-[47%] z-1 absolute top-[16.3%] left-[10.7%]" alt='BlueRectagneBackground'></Image>
+                <Image src={DocPatient_pic3} class="w-[42%] h-[47%] z-1 absolute top-[15%] left-[10%] brightness-125" alt='DocPatientPic2'></Image>
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[63%] mt-[10%] rounded-md justify-center'>
                 <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
@@ -76,8 +76,8 @@ export default function ServicesPage() {
         </section>
         <section class="top-[200%] h-[100vh] w-[100%] absolute">
             <div>
-                <Image src={BlueRectangle} class="w-[600px] h-[400px] z-1 absolute top-[16.3%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
-                <Image src={ContactsRoom_pic1} class="w-[600px] h-[400px] z-1 absolute top-[15%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
+                <Image src={BlueRectangle} class="w-[41%] h-[43%] z-1 absolute top-[16.3%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
+                <Image src={ContactsRoom_pic1} class="w-[41%] h-[43%] z-1 absolute top-[15%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[10%] mt-[10%] rounded-md justify-center'>
                 <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
@@ -93,8 +93,8 @@ export default function ServicesPage() {
         </section>
         <section class="top-[300%] h-[100vh] w-[100%] absolute">
             <div>
-                <Image src={BlueRectangle} class="w-[600px] h-[400px] z-1 absolute top-[16.3%] left-[10.7%]" alt='BlueRectagneBackground'></Image>
-                <Image src={RVCGlassesRoom_pic1} class="w-[600px] h-[400px] z-1 absolute top-[15%] left-[10%] brightness-125" alt='DocPatientPic2'></Image>
+                <Image src={BlueRectangle} class="w-[40%] h-[46.5%] z-1 absolute top-[16.3%] left-[10.7%]" alt='BlueRectagneBackground'></Image>
+                <Image src={RVCGlassesRoom_pic1} class="w-[40%] h-[46.5%] z-1 absolute top-[15%] left-[10%] brightness-125" alt='DocPatientPic2'></Image>
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[63%] mt-[10%] rounded-md justify-center'>
                 <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
