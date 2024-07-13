@@ -24,7 +24,7 @@ export default function ServicesPage() {
   return (
     <>
         <section class="h-[100vh] w-[100%] absolute">
-        <div class="absolute font-<K2D> text-6xl w-[100%] flex justify-center top-[15%]">
+        <div class="absolute font-<K2D> text-[7vh] w-[100%] flex justify-center top-[15%]">
             <div class="text-black">Our <mark class="text-primary bg-transparent">Services</mark></div>
         </div>
         <div>
