@@ -90,7 +90,7 @@ export default function ServicesPage() {
                 </div>
             </div>
             <GreenRectangleBanner text={"We have lots of frames that look cool and fit well so kids actually love their glasses! We use durable products and safe polycarbonate lenses.  We also offer contact lenses for children.  Disposable contact lenses are safer and more convenient making them a great option for kids, especially for sports and other activities."}></GreenRectangleBanner>
-        </section>
+            </section>
         <section class="top-[300%] h-[100vh] w-[100%] absolute">
             <div>
                 <Image src={BlueRectangle} class="w-[40%] h-[46.5%] z-1 absolute top-[16.3%] left-[10.7%]" alt='BlueRectagneBackground'></Image>
@@ -98,31 +98,31 @@ export default function ServicesPage() {
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[63%] mt-[10%] rounded-md justify-center'>
                 <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
-                    <div class="flex flex-row pb-[10px] w-[100%] justify-left">
+                    <div class="flex flex-row pb-[1.2vh] w-[100%] justify-left">
                     <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Eyewear</div>
                     </div>
                     <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
                         <div class="text-[2.1vh] leading-7 mb-[1.2vh]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
-                        <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">View Supported Brands</button>
+                        <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-[1.95vh] leading-7 h-[2.7vw] min-h-0 normal-case font-normal">View Supported Brands</button>
                         <dialog id="brands_modal" className="modal">
-                        <div className="modal-box flex flex-col items-center max-w-[34rem]">
+                        <div className="modal-box flex flex-col items-center w-[36vw] max-w-[100rem]">
                             <div class="flex mr-[20%]">
-                                <Image class="mr-[4%]" width="100" height="100" src={Gucci_Logo}></Image>
-                                <Image class="mr-[5%]" width="100" height="100" src={Prada_Logo}></Image>
-                                <Image class="mr-[9%]" width="85" height="85" src={Armani_Logo}></Image>
-                                <Image class="mr-[4%]" width="140" height="140" src={DocleAndGabbana_Logo}></Image>
+                                <Image class="mr-[4%] w-[6.5vw] h-[6.5vw]" src={Gucci_Logo}></Image>
+                                <Image class="mr-[5%] w-[6.5vw] h-[6.5vw]" src={Prada_Logo}></Image>
+                                <Image class="mr-[9%]  w-[5.6vw] h-[5.6vw] mt-[0.4vw]" width="85" height="85" src={Armani_Logo}></Image>
+                                <Image class="mr-[4%]  w-[9.3vw] h-[9.3vw] mt-[-1.4vw]" width="140" height="140" src={DocleAndGabbana_Logo}></Image>
                             </div>
                             <div class="flex mr-[7%]">
-                                <Image class='mr-[3%]' width="150" height="150" src={Burberry_Logo}></Image>
-                                <Image class='mr-[3%]' width="100" height="100" src={RayBan_Logo}></Image>
-                                <Image class='mr-[3%]' width="100" height="100" src={Coach_Logo}></Image>
-                                <Image class='mr-[3%]' width="100" height="100" src={Guess_Logo}></Image>
+                                <Image class='mr-[3%] w-[10vw] h-[10vw] mt-[-1.2vw]'src={Burberry_Logo}></Image>
+                                <Image class='mr-[3%] w-[6.5vw] h-[6.5vw]'src={RayBan_Logo}></Image>
+                                <Image class='mr-[3%] w-[6.5vw] h-[6.5vw]' src={Coach_Logo}></Image>
+                                <Image class='mr-[3%] w-[6.5vw] h-[6.5vw]' src={Guess_Logo}></Image>
                             </div>
                             <div class="flex mr-[14%]">
                                 <Image class='mr-[3%]' width="120" height="120" src={Oakley_Logo}></Image>
-                                <Image class='mr-[7%]' width="100" height="100" src={MCM_Logo}></Image>
-                                <Image class='mr-[7%]' width="100" height="100" src={Lacoste_Logo}></Image>
-                                <Image class='mr-[7%]' width="100" height="100" src={Versace_Logo}></Image>
+                                <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={MCM_Logo}></Image>
+                                <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Lacoste_Logo}></Image>
+                                <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Versace_Logo}></Image>
                             </div>
                             {/* <h3 className="font-bold text-lg text-black">GLASSES</h3>
                             <p className="py-4 text-black">glasses are here</p> */}
