@@ -14,8 +14,8 @@ export default function RVC_LOGO({changeRoute}) {
   return (
     // Div below needs to be %5
     // onClick={() => goHomeRoute()}
-    <div onClick={() => changeRoute("home")} class="left-[2%] relative cursor-pointer">
-      <Image src={rvc_logo_img} width={100} height={100} alt='RVC_Logo'></Image>
+    <div onClick={() => changeRoute("home")} class="left-[2%] mt-[0.1vw] relative cursor-pointer">
+      <Image src={rvc_logo_img} class='w-[6.5vw] h-[6.5vs]' alt='RVC_Logo'></Image>
     </div>
   )
 }

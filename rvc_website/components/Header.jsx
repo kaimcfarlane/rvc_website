@@ -69,24 +69,24 @@ export default function header({route_obj, changeRoute}) {
   }
 
   return (
-    <section class="flex flex-row justify-between bg-white fixed w-full z-[1] top-[0%] shadow-md">
+    <section class="flex flex-row justify-between bg-white h-[5.38vw] fixed w-full z-[1] top-[0%] shadow-md">
         <RVC_LOGO changeRoute={changeRoute}></RVC_LOGO>
-        <div id='page_links' class="flex items-center w-6/12 justify-around text-black">
+        <div id='page_links' class="flex items-center w-[50vw] justify-around text-black">
             <Link href="/">
-              <button ref={homeBtn} id='homeBtn' onClick={() => changeRoute("home")} className="btn btn-ghost">HOME</button>
+              <button ref={homeBtn} id='homeBtn' onClick={() => changeRoute("home")} className="btn btn-ghost text-[1vw] w-[1vw]">HOME</button>
             </Link>
             <Link href="/aboutus">
-              <button ref={aboutusBtn} id='aboutusBtn' onClick={() => changeRoute("aboutus")} className="btn btn-ghost">ABOUT US</button>
+              <button ref={aboutusBtn} id='aboutusBtn' onClick={() => changeRoute("aboutus")} className="btn btn-ghost whitespace-nowrap text-[1vw] w-[1vw]">ABOUT US</button>
             </Link>
             <Link href="/services">
-              <button ref={servicesBtn} id='servicesBtn' onClick={() => changeRoute("services")} className="btn btn-ghost">SERVICES</button>
+              <button ref={servicesBtn} id='servicesBtn' onClick={() => changeRoute("services")} className="btn btn-ghost text-[1vw] w-[1vw]">SERVICES</button>
             </Link>
             <Link href="/insurance">
             {/* Eitehr vias js or tailwind, we need to add text to be 100% fr bigger screen sizes only or test a percentage that works on both or see if another value besides percentage that can work */}
-              <button ref={insuranceBtn} id='insuranceBtn' onClick={() => changeRoute("insurance")} className="btn btn-ghost !text-[87.5%]">INSURANCE</button>
+              <button ref={insuranceBtn} id='insuranceBtn' onClick={() => changeRoute("insurance")} className="btn btn-ghost text-[1vw] w-[1vw]">INSURANCE</button>
             </Link>
             <Link href="/contact">
-              <button ref={contactBtn} id='contactBtn' onClick={() => changeRoute("contact")} className="btn btn-ghost">CONTACT</button>
+              <button ref={contactBtn} id='contactBtn' onClick={() => changeRoute("contact")} className="btn btn-ghost text-[1vw] w-[1vw]">CONTACT</button>
             </Link>
         </div>
     </section>
