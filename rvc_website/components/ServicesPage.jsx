@@ -28,19 +28,19 @@ export default function ServicesPage() {
             <div class="text-black">Our <mark class="text-primary bg-transparent">Services</mark></div>
         </div>
         <div>
-            <Image src={BlueRectangle} class="w-[40%] h-[45%] z-1 absolute top-[34.3%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
-            <Image src={DocPatient_pic2} class="w-[40%] h-[45%] z-1 absolute top-[33%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
+            <Image src={BlueRectangle} class="w-[40%] h-[50%] z-1 absolute top-[29%] left-[55.7%]" alt='BlueRectagneBackground'></Image>
+            <Image src={DocPatient_pic2} class="w-[40%] h-[50%] z-1 absolute top-[27.7%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
         </div>
         <div class='w-[30%] h-[50%] p-[20px] static ml-[10%] mt-[16%] rounded-md justify-center'>
             <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
-                <div class="flex flex-row pb-[10px] w-[100%] justify-left">
-                <div class="mr-[2%] text-secondary text-4xl">Eye Exams</div>
+                <div class="flex flex-row pb-[0.75vh] w-[100%] justify-left">
+                <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Eye Exams</div>
                 </div>
-                <div class="flex flex-col w-[100%] justify-left mb-[10px]">
-                    <div class="text-lg mb-[10px]">Regardless of your age or health, it’s important to have regular eye exams.</div>
-                    <div class="text-lg">We examine, treat, and diagnose:</div>
+                <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
+                    <div class="text-[2.1vh] leading-7 mb-[1.2vh]">Regardless of your age or health, it’s important to have regular eye exams.</div>
+                    <div class="text-[2.1vh] leading-7">We examine, treat, and diagnose:</div>
                 </div>
-                <div class="flex flex-row w-[100%] justify-left text-lg ml-[7%]">
+                <div class="flex flex-row w-[100%] justify-left text-[2.1vh] ml-[7%]">
                     <ul class="list-disc">
                         <li>Nearsightedness</li>
                         <li>Farsightedness</li>
@@ -64,11 +64,11 @@ export default function ServicesPage() {
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[63%] mt-[10%] rounded-md justify-center'>
                 <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
-                    <div class="flex flex-row pb-[10px] w-[100%] justify-left">
-                    <div class="mr-[2%] text-secondary text-4xl">Pediatric Exams</div>
+                    <div class="flex flex-row pb-[1.2vh] w-[100%] justify-left">
+                    <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Pediatric Exams</div>
                     </div>
-                    <div class="flex flex-col w-[100%] justify-left mb-[10px]">
-                        <div class="text-lg mb-[10px]">Approximately 25% of school-aged children have vision problems. All children should have a comprehensive eye exam before age 3.  It is very important for parents to know that vision screenings performed at school or by a pediatrician are not substitutes for a comprehensive eye exam.  At Reese Vision Care, we see children age 3 years and older.</div>
+                    <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
+                        <div class="text-[2.1vh] leading-7 mb-[1.2vh]">Approximately 25% of school-aged children have vision problems. All children should have a comprehensive eye exam before age 3.  It is very important for parents to know that vision screenings performed at school or by a pediatrician are not substitutes for a comprehensive eye exam.  At Reese Vision Care, we see children age 3 years and older.</div>
                     </div>
                 </div>
             </div>
@@ -81,11 +81,11 @@ export default function ServicesPage() {
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[10%] mt-[10%] rounded-md justify-center'>
                 <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
-                    <div class="flex flex-row pb-[10px] w-[100%] justify-left">
-                    <div class="mr-[2%] text-secondary text-4xl">Contact Lenses</div>
+                    <div class="flex flex-row pb-[1.2vh] w-[100%] justify-left">
+                    <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Contact Lenses</div>
                     </div>
-                    <div class="flex flex-col w-[100%] justify-left mb-[10px]">
-                        <div class="text-lg mb-[10px]">Dr. Reese is a contact lens specialist.  Dr. Reese fits contact lenses of all types, including color lenses, lenses for astigmatism, and multi-focal lenses. Whether you prefer daily, weekly or monthly disposables, we provide a wide selection of contact lenses to fit your needs. </div>
+                    <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
+                        <div class="text-[2.1vh] leading-7 mb-[1.2vh]">Dr. Reese is a contact lens specialist.  Dr. Reese fits contact lenses of all types, including color lenses, lenses for astigmatism, and multi-focal lenses. Whether you prefer daily, weekly or monthly disposables, we provide a wide selection of contact lenses to fit your needs. </div>
                     </div>
                 </div>
             </div>
@@ -99,10 +99,10 @@ export default function ServicesPage() {
             <div class='w-[30%] h-[50%] p-[20px] static ml-[63%] mt-[10%] rounded-md justify-center'>
                 <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
                     <div class="flex flex-row pb-[10px] w-[100%] justify-left">
-                    <div class="mr-[2%] text-secondary text-4xl">Eyewear</div>
+                    <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Eyewear</div>
                     </div>
-                    <div class="flex flex-col w-[100%] justify-left mb-[10px]">
-                        <div class="text-lg mb-[10px]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
+                    <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
+                        <div class="text-[2.1vh] leading-7 mb-[1.2vh]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
                         <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-lg normal-case font-normal">View Supported Brands</button>
                         <dialog id="brands_modal" className="modal">
                         <div className="modal-box flex flex-col items-center max-w-[34rem]">

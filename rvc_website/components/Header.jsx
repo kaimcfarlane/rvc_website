@@ -82,7 +82,8 @@ export default function header({route_obj, changeRoute}) {
               <button ref={servicesBtn} id='servicesBtn' onClick={() => changeRoute("services")} className="btn btn-ghost">SERVICES</button>
             </Link>
             <Link href="/insurance">
-              <button ref={insuranceBtn} id='insuranceBtn' onClick={() => changeRoute("insurance")} className="btn btn-ghost">INSURANCE</button>
+            {/* Eitehr vias js or tailwind, we need to add text to be 100% fr bigger screen sizes only or test a percentage that works on both or see if another value besides percentage that can work */}
+              <button ref={insuranceBtn} id='insuranceBtn' onClick={() => changeRoute("insurance")} className="btn btn-ghost !text-[87.5%]">INSURANCE</button>
             </Link>
             <Link href="/contact">
               <button ref={contactBtn} id='contactBtn' onClick={() => changeRoute("contact")} className="btn btn-ghost">CONTACT</button>

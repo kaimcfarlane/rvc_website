@@ -7,6 +7,10 @@ import ContactModal from './ContactModal'
 
 
 export default function HomePage() {
+
+  // console.log("Height: " + window.innerHeight);
+  // console.log("Width: " + window.innerWidth);
+
   return (
     <section class="bg-[url('../public/rvc_office/rvc_officefloor.jpeg')] bg-cover bg-center h-[100vh] w-[100%] absolute">
       <div class='bg-opaque_white w-[530px] h-[140px] static ml-[60%] mt-[32%] rounded-md shadow-md'>
