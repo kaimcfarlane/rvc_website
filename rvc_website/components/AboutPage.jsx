@@ -34,19 +34,19 @@ export default function AboutPage() {
     </section>
     <section class="top-[100%] h-[100vh] w-[100%] absolute">
       <div>
-        <Image src={DoctorHeadshot} class="w-[350px] h-[500px] z-1 absolute top-[21%] left-[65%] border-solid border-secondary rounded-lg border-4 shadow-lg" alt='DocPatientPic1'></Image>
+        <Image src={DoctorHeadshot} class="w-[22.3vs] h-[33.2vw] z-1 absolute top-[21%] left-[65%] border-solid border-secondary rounded-lg border-4 shadow-lg" alt='DocPatientPic1'></Image>
       </div>
       <div class='w-[45%] h-[50%] p-[20px] static ml-[10%] mt-[14%] rounded-md justify-center'>
-        <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
-            <div class="flex flex-row pb-[10px] w-[100%] justify-left">
+        <div class='flex flex-col items-center text-black justify-center font-<K2D> text-[3.2vw] leading-none pb-[1.65vw]'>
+            <div class="flex flex-row pb-[0.7vw] w-[100%] justify-left">
             <div class="mr-[2%]">Melanie Reese</div>
                 <div class="text-primary">O.D.</div>
             </div>
             <div class="flex flex-row w-[100%] justify-left">
-                <div class="text-secondary text-3xl">Doctor of Optometry</div>
+                <div class="text-secondary text-[1.99vw]">Doctor of Optometry</div>
             </div>
         </div>
-        <div class='flex text-black justify-center font-<K2D> text-3xl pt-[20px] pb-[27px]'>
+        <div class='flex text-black justify-center font-<K2D> leading-[2.38vw] text-[1.98vw] pt-[1.3vw]'>
           <div class="">
           Dr. Melanie A. Reese is a <mark class="text-primary bg-transparent">Board</mark> Certified Optometrist and has practiced in South Florida for over 20 years.  
           Dr. Reese graduated from Nova Southeastern University, College of Optometry with Highest Honors in 2002.  
