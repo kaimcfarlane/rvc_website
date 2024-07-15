@@ -58,39 +58,40 @@ export default function Footer({changeRoute, background, pages}) {
       {
         background == "blue" && <RequestBanner text={"Request an Appointment and See the Difference Now"}/>
       }
-        <footer ref={footerTopContainer} className="footer p-10 bg-white text-base-content">
-        <nav>
-            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Information</h6> 
-            <Link href="https://www.facebook.com/reesevisioncare/" target="_blank">
+        <footer ref={footerTopContainer} className="footer p-[2.63vw] bg-white text-base-content">
+          {/* 0.925vw */}
+        <nav className='gap-[0.53vw]'>
+            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass} text-[0.925vw]` }>Information</h6> 
+            <Link className='text-[0.925vw]' href="https://www.facebook.com/reesevisioncare/" target="_blank">
               <div className="link link-hover">Branding</div>
             </Link>
-            <Link href="https://www.facebook.com/reesevisioncare/reviews" target="_blank">
+            <Link className='text-[0.925vw]' href="https://www.facebook.com/reesevisioncare/reviews" target="_blank">
               <div className="link link-hover">Reviews</div>
             </Link>
-            <Link href="mailto:reesevisioncontacts@gmail.com" target="_blank">
+            <Link className='text-[0.925vw]' href="mailto:reesevisioncontacts@gmail.com" target="_blank">
               <div className="link link-hover">Email</div>
             </Link>
-            <Link href="insurance">
+            <Link className='text-[0.925vw]' href="insurance">
               <div onClick={() => changeRoute("insurance")} className="link link-hover">Insurance</div>
             </Link>
         </nav> 
-        <nav>
-            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Company</h6> 
-            <Link href="aboutus">
+        <nav className='gap-[0.53vw]'>
+            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass} text-[0.925vw]`}>Company</h6> 
+            <Link className='text-[0.925vw]' href="aboutus">
               <div onClick={() => changeRoute("aboutus")} className="link link-hover">About us</div>
             </Link>
-            <Link href="/contact">
+            <Link className='text-[0.925vw]' href="/contact">
               <div onClick={() => changeRoute("contact")} className="link link-hover">Contact</div>
             </Link>
-            <div onClick={()=>document.getElementById('job_modal').showModal()} className="link link-hover">Employment</div>
+            <div onClick={()=>document.getElementById('job_modal').showModal()} className="link text-[0.925vw] link-hover">Employment</div>
             <dialog id="job_modal" className="modal"><ContactModal text={"Fill out form and attach resume to send your job application. (PDF Only)"} placeholder={"Job Request"} isJobForm={true}></ContactModal></dialog>
-            <Link href="http://maps.google.com/?q=Reese Vision Care" target="_blank">
+            <Link className='text-[0.925vw]' href="http://maps.google.com/?q=Reese Vision Care" target="_blank">
               <div className="link link-hover">Location</div>
             </Link>
         </nav> 
-        <nav>
-            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass}`}>Legal</h6> 
-            <div onClick={()=>document.getElementById('TOU_modal').showModal()} className="link link-hover">Terms of use</div>
+        <nav className='gap-[0.53vw]'>
+            <h6 ref={footerTitle} className={`footer-title ${footerTitleClass} text-[0.925vw]`}>Legal</h6> 
+            <div onClick={()=>document.getElementById('TOU_modal').showModal()} className="link text-[0.925vw] link-hover">Terms of use</div>
             <dialog id="TOU_modal" className="modal">
               <div className="modal-box">
                 <h3 className="font-bold text-lg text-black">Hello there!</h3>
@@ -100,7 +101,7 @@ export default function Footer({changeRoute, background, pages}) {
                 <button>close</button>
               </form>
             </dialog>
-            <div onClick={()=>document.getElementById('privacy_policy_modal').showModal()} className="link link-hover">Privacy policy</div>
+            <div onClick={()=>document.getElementById('privacy_policy_modal').showModal()} className="link text-[0.925vw] link-hover">Privacy policy</div>
             <dialog id="privacy_policy_modal" className="modal">
               <div className="modal-box">
                 <h3 className="font-bold text-lg text-black">Hello there!</h3>
@@ -110,7 +111,7 @@ export default function Footer({changeRoute, background, pages}) {
                 <button>close</button>
               </form>
             </dialog>
-            <div onClick={()=>document.getElementById('cookies_modal').showModal()} className="link link-hover">Cookie policy</div>
+            <div onClick={()=>document.getElementById('cookies_modal').showModal()} className="link text-[0.925vw] link-hover">Cookie policy</div>
             <dialog id="cookies_modal" className="modal">
               <div className="modal-box">
                 <h3 className="font-bold text-lg text-black">Hello there!</h3>
@@ -122,22 +123,21 @@ export default function Footer({changeRoute, background, pages}) {
             </dialog>
         </nav>
         </footer> 
-        <footer ref={footerBotContainer} className="footer px-10 py-4 border-t bg-white text-base-content border-base-300">
+        <footer ref={footerBotContainer} className="footer pl-[2.63vw] pr-[2.63vw] pt-[1.1vw] pb-[1.1vw] border-t bg-white text-base-content border-base-300">
         <aside className="items-center grid-flow-col">
             <RVC_ICON background={background} white={white}></RVC_ICON>
-            <p>Reese Vision Care <br/>Providing quality eye care since 2010</p>
+            <p className='text-[0.93vw] leading-[1.3vw]'>Reese Vision Care <br/>Providing quality eye care since 2010</p>
         </aside> 
-        {/* Icons below use this color: #303030 */}
         <nav className="md:place-self-center md:justify-self-end">
             <div className="grid grid-flow-col gap-4 items-center">
             <Link href="https://www.facebook.com/reesevisioncare/" target="_blank">
-              <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></div>
+              <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="fill-current w-[1.6vw] h-[1.6vw]"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></div>
             </Link>
             <Link href="https://www.instagram.com/reesevisioncare/" target="_blank">
-              <div><Image src={background == 'white' ? black_instagram_icon : white_instagram_icon} width="33" height="33" viewBox="0 0 24 24" className="fill-current"></Image></div>
+              <div><Image src={background == 'white' ? black_instagram_icon : white_instagram_icon} viewBox="0 0 24 24" className="fill-current w-[2.1vw] h-[2.1vw]"></Image></div>
             </Link>
             <Link href="tel:9547464009" target="_blank">
-              <div><Image src={background == 'white' ? black_phone_icon : white_phone_icon} width="24" height="24" viewBox="0 0 24 24" className="fill-current mb-[3px]"></Image></div>
+              <div><Image src={background == 'white' ? black_phone_icon : white_phone_icon} viewBox="0 0 24 24" className="fill-current mb-[3px] w-[1.7vw] h-[1.7vw]"></Image></div>
             </Link>
             </div>
         </nav>
