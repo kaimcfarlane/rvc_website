@@ -19,6 +19,9 @@ import MCM_Logo from '../public/gen_icons/mcm_logo_1.png'
 import Guess_Logo from '../public/gen_icons/guess_logo_1.svg'
 import RayBan_Logo from '../public/gen_icons/rayban_logo_1.svg'
 import GreenRectangleBanner from '@/components/GreenRectangleBanner'
+import TomFord_Logo from '../public/gen_icons/tomford_logo_transparent.png'
+import Nike_Logo from '../public/gen_icons/nike_logo.png'
+import Tiffany_Logo from '../public/gen_icons/tiffany_and_co_transparent.png'
 
 export default function ServicesPage() {
   return (
@@ -105,24 +108,27 @@ export default function ServicesPage() {
                         <div class="text-[2.1vh] leading-[1.85vw] mb-[1.2vh]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
                         <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-[1.95vh] leading-7 h-[2.7vw] min-h-0 normal-case font-normal">View Optical Brands</button>
                         <dialog id="brands_modal" className="modal">
-                        <div className="modal-box flex flex-col items-center w-[36vw] max-w-[100rem]">
+                        <div className="modal-box flex flex-col items-center w-[48vw] max-w-[100rem]">
                             <div class="flex mr-[20%]">
                                 <Image class="mr-[4%] w-[6.5vw] h-[6.5vw]" src={Gucci_Logo}></Image>
                                 <Image class="mr-[5%] w-[6.5vw] h-[6.5vw]" src={Prada_Logo}></Image>
                                 <Image class="mr-[9%]  w-[5.6vw] h-[5.6vw] mt-[0.4vw]" width="85" height="85" src={Armani_Logo}></Image>
                                 <Image class="mr-[4%]  w-[9.3vw] h-[9.3vw] mt-[-1.4vw]" width="140" height="140" src={DocleAndGabbana_Logo}></Image>
+                                <Image class='mr-[7%] w-[7vw] h-[8vw] mt-[-0.78vw]' src={Tiffany_Logo}></Image>
                             </div>
-                            <div class="flex mr-[7%]">
-                                <Image class='mr-[3%] w-[10vw] h-[10vw] mt-[-1.2vw]'src={Burberry_Logo}></Image>
-                                <Image class='mr-[3%] w-[6.5vw] h-[6.5vw]'src={RayBan_Logo}></Image>
-                                <Image class='mr-[3%] w-[6.5vw] h-[6.5vw]' src={Coach_Logo}></Image>
-                                <Image class='mr-[3%] w-[6.5vw] h-[6.5vw]' src={Guess_Logo}></Image>
+                            <div class="flex mr-[12%]">
+                                <Image class='mr-[3%] w-[10vw] h-[10vw] mt-[-1.4vw]'src={Burberry_Logo}></Image>
+                                <Image class='mr-[4%] w-[6.5vw] h-[6.5vw]'src={RayBan_Logo}></Image>
+                                <Image class='mr-[4%] w-[6.5vw] h-[6.5vw]' src={Coach_Logo}></Image>
+                                <Image class='mr-[4%] w-[6.5vw] h-[6.5vw]' src={Guess_Logo}></Image>
+                                <Image class='mr-[7%] w-[6vw] h-[6vw] mt-[0.2vw]' src={Nike_Logo}></Image>
                             </div>
-                            <div class="flex mr-[14%]">
+                            <div class="flex mr-[19%]">
                                 <Image class='mr-[3%]' width="120" height="120" src={Oakley_Logo}></Image>
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={MCM_Logo}></Image>
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Lacoste_Logo}></Image>
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Versace_Logo}></Image>
+                                <Image class='mr-[7%] w-[5vw] h-[5vw] mt-[1.3vw]' src={TomFord_Logo}></Image>
                                 {/* Tiffany, Tomford, Nike */}
                             </div>
                             {/* <h3 className="font-bold text-lg text-black">GLASSES</h3>
