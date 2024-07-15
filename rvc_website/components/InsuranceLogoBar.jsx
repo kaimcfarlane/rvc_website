@@ -17,7 +17,7 @@ export default function InsuranceLogoBar() {
     <>
         <div className="collapse bg-white">
             <input type="checkbox" /> 
-            <div className="collapse-title text-xl text-white bg-primary text-center font-medium">
+            <div className="collapse-title leading-7 p-[1.4vw] min-h-[0] h-[4vw] text-[1.4vw] text-white bg-primary text-center font-medium">
                 View Accepted Insurance Providers
             </div>
             <div className="collapse-content shadow-xl"> 

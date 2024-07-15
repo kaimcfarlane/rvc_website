@@ -68,7 +68,7 @@ export default function ServicesPage() {
                     <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Pediatric Exams</div>
                     </div>
                     <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
-                        <div class="text-[2.1vh] leading-7 mb-[1.2vh]">Approximately 25% of school-aged children have vision problems. All children should have a comprehensive eye exam before age 3.  It is very important for parents to know that vision screenings performed at school or by a pediatrician are not substitutes for a comprehensive eye exam.  At Reese Vision Care, we see children age 3 years and older.</div>
+                        <div class="text-[2.1vh] leading-7 mb-[1.2vh]">Approximately 25% of school-aged children have vision problems. All children should have a comprehensive eye exam before they start kindergarten.  It is very important for parents to know that vision screenings performed at school or by a pediatrician are not substitutes for a comprehensive eye exam.  At Reese Vision Care, we see children age 5 years and older.</div>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@ export default function ServicesPage() {
                     </div>
                     <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
                         <div class="text-[2.1vh] leading-7 mb-[1.2vh]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
-                        <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-[1.95vh] leading-7 h-[2.7vw] min-h-0 normal-case font-normal">View Supported Brands</button>
+                        <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-[1.95vh] leading-7 h-[2.7vw] min-h-0 normal-case font-normal">View Optical Brands</button>
                         <dialog id="brands_modal" className="modal">
                         <div className="modal-box flex flex-col items-center w-[36vw] max-w-[100rem]">
                             <div class="flex mr-[20%]">
@@ -123,6 +123,7 @@ export default function ServicesPage() {
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={MCM_Logo}></Image>
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Lacoste_Logo}></Image>
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Versace_Logo}></Image>
+                                {/* Tiffany, Tomford, Nike */}
                             </div>
                             {/* <h3 className="font-bold text-lg text-black">GLASSES</h3>
                             <p className="py-4 text-black">glasses are here</p> */}
