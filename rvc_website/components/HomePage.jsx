@@ -22,7 +22,7 @@ export default function HomePage() {
         </div>
         <div class='flex justify-center mt-[-15px] '>
           <button onClick={()=>document.getElementById('my_modal_1').showModal()} className="btn w-[17vw] h-[2.5vw] btn-primary text-white font-<K2D> text-[1vw] normal-case font-normal">Request Appointment</button>
-          <dialog id="my_modal_1" className="modal"><ContactModal text={"Fill out form to request an appointment"} placeholder={"Appointment Request"} isJobForm={false}></ContactModal></dialog>
+          <dialog id="my_modal_1" className="modal"><ContactModal text={"Hey, interested in scheduling an appointment!"} subText={"Fill out your information below and we'll contact you as soon as possible"} placeholder={"Appointment Request"} isJobForm={false}></ContactModal></dialog>
         </div>
       </div>
       <GreenCircleBanner></GreenCircleBanner>
