@@ -25,8 +25,9 @@ export default function InsurancePage() {
                 <div class="flex flex-row pb-[0.7vw] w-[100%] justify-left">
                 <div class="mr-[2%] text-black text-[1.6vw] leading-8 font-semibold">Vision and Medical Plans</div>
                 </div>
-                <div class="flex flex-col w-[100%] justify-left mb-[0.7vw]">
+                <div class="flex flex-col w-[100%] justify-left mb-[2.5vw]">
                     <div class="text-[1.2vw] leading-[1.85vw] mb-[0.7vw]">Our office accepts most vision plans and some medical plans. Vision plans are primarily for routine eye exams, glasses and contact lenses only. Medical plans usually cover an eye exam when there is an eye-related medical problem, such as, eye infections, eye injury, cataracts (among many others). Some medical plans may also cover routine eye care. Please provide us with your vision and medical insurance plan information so that we can make sure you are utilizing your full benefits. You may contact us at (954) 746-4009 to verify your insurance coverage.</div>
+                    <InsuranceLogoBar/>
                 </div>
             </div>
         </div>
@@ -50,7 +51,7 @@ export default function InsurancePage() {
                 </div>
             </div>
         </div>
-        <InsuranceLogoBar/>
+        
         {/* <make this a button after vision and medical plans or at bottom */}
       </section>
     </>

@@ -15,12 +15,9 @@ import Cigna_logo from '../public/gen_icons/cigna_insurance_logo.png'
 export default function InsuranceLogoBar() {
   return (
     <>
-        <div className="collapse bg-white">
-            <input type="checkbox" /> 
-            <div className="collapse-title leading-7 p-[1.4vw] min-h-[0] h-[4vw] text-[1.4vw] text-white bg-primary text-center font-medium">
-                View Accepted Insurance Providers
-            </div>
-            <div className="collapse-content shadow-xl"> 
+        <button onClick={()=>document.getElementById('insurances_modal').showModal()} className="btn w-[17vw] h-[2.5vw] btn-primary text-white font-<K2D> text-[1vw] normal-case font-normal">View Supported Insurances</button>
+        <dialog id="insurances_modal" className="modal">
+            <div className="modal-box">
                 <div class='flex justify-around'>
                     <Image class='w-[75px] h-[50px]' src={BCBS_logo} alt='BCBS_logo'></Image>
                     <Image class='w-[125px] h-[50px]' src={Humana_logo} alt='Humana_logo'></Image>
@@ -34,7 +31,10 @@ export default function InsuranceLogoBar() {
                     <Image class='w-[125px] h-[50px]' src={Cigna_logo} alt='Spectera_logo'></Image>
                 </div>
             </div>
-        </div>
+            <form method="dialog" className="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>
     </>
   )
 }

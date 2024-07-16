@@ -129,10 +129,7 @@ export default function ServicesPage() {
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Lacoste_Logo}></Image>
                                 <Image class='mr-[7%] w-[6.5vw] h-[6.5vw]' src={Versace_Logo}></Image>
                                 <Image class='mr-[7%] w-[5vw] h-[5vw] mt-[1.3vw]' src={TomFord_Logo}></Image>
-                                {/* Tiffany, Tomford, Nike */}
                             </div>
-                            {/* <h3 className="font-bold text-lg text-black">GLASSES</h3>
-                            <p className="py-4 text-black">glasses are here</p> */}
                         </div>
                         <form method="dialog" className="modal-backdrop">
                             <button>close</button>
