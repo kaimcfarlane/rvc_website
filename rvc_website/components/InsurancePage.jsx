@@ -51,8 +51,6 @@ export default function InsurancePage() {
                 </div>
             </div>
         </div>
-        
-        {/* <make this a button after vision and medical plans or at bottom */}
       </section>
     </>
   )
