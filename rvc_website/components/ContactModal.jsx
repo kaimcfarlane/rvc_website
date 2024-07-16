@@ -6,15 +6,15 @@ import staff_pic from '../public/rvc_glasses/staff3_.jpg'
 export default function ContactModal({text, placeholder, isJobForm, subText}) {
 
   return (
-    // Need to media query where on small screen size have w-60vw and h-26vw
+    // Need to media query where we add margin-top 3vw to moda-action or div under class card body and then just remove the height
     <>
-    <div className="modal-box bg-primary max-w-[100vw] w-[70vw] h-[30.3vw]">
+    <div className="modal-box bg-primary max-w-[100vw] w-[70vw] h-[30.8vw] 2xl:h-[29.6vw]">
         <div className="card lg:card-side bg-base-100 shadow-xl">
             <figure>
-                <Image src={staff_pic} className='w-[35vw] h-[27vw]'></Image>
+                <Image src={staff_pic} className='w-[35vw] h-[27.6vw]'></Image>
             </figure>
             <div className="card-body">
-                    <div className="modal-action flex flex-col justify-center">
+                    <div className="modal-action flex flex-col justify-center mt-[0] 2xl:mt-[3vw]">
                         <h1 className="text-[1.5vw] leading-[2vw] text-black text-wrap text-center mt-[-0.7vw] mb-[1vw]">{text}</h1>
                         <p className="font-bold text-[0.7vw] text-[#3f3f46] text-center mb-[2vw]">{subText}</p>
                         <form method="POST" class="flex flex-col justify-center"  action="https://formsubmit.co/962bba0145eff702958c47797e1eae17" enctype="multipart/form-data">
@@ -33,7 +33,7 @@ export default function ContactModal({text, placeholder, isJobForm, subText}) {
                         </label>
                         {isJobForm ? (<input type="file" className="file-input file-input-primary file-input-bordered w-full max-w-xs mb-[10px] text-black" name="attachment" accept="application/pdf"></input>) : (<></>)}
                         <input type="hidden" name="_autoresponse" value="We have recieved your request. Our office will contact you within 24-48 hrs. Thank you! - Reese Vision Care"></input>
-                        <button className="btn btn-secondary text-white" type="submit">Send</button>
+                        <button className="btn btn-secondary h-[3.2vw] text-[0.93vw] text-white" type="submit">Send</button>
                         </form>
                     </div>
                     {/* <h2 className="card-title">New album is released!</h2>
