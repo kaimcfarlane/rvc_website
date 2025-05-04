@@ -21,15 +21,108 @@ export default function ContactPage() {
           <button onClick={()=>document.getElementById('my_modal_1').showModal()} className="btn btn-wide btn-secondary text-white font-<K2D> text-lg normal-case font-normal">Have a Request?</button>
           <dialog id="my_modal_1" className="modal"><ContactModal text={"Fill out form below to send us a message"} placeholder={"Message"} isJobForm={false}></ContactModal></dialog>
         </div> */}
-        <div className='flex flex-row-reverse absolute left-[15%] top-[30%] card w-[70%] bg-primary shadow-xl static justify-center p-[1%]'>
+        <div className='flex flex-row-reverse absolute left-[15%] top-[25%] card w-[70%] static justify-center p-[1%]'>
           {/* <div class="flex flex-row pb-[10px] w-[100%] justify-left">
             <div class="mr-[2%] text-secondary text-4xl">Contact Information</div>
           </div> */}
-          <div class="z-1 border-solid border-grey rounded-md border-8 shadow-xl">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.7704956179414!2d-80.259265324264!3d26.17160289154566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d90689e16cfc25%3A0xd96cfd401d12afad!2sReese%20Vision%20Care!5e0!3m2!1sen!2sus!4v1714844901669!5m2!1sen!2sus" width="600" height="450" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div className='mt-[2vh]'>
+            <button onClick={()=>document.getElementById('my_modal_1').showModal()} className="btn w-[100%] h-[2.5vw] btn-secondary text-white font-<K2D> text-[1vw] normal-case font-normal mb-[3vh]">Want to schedule an appointment?</button>
+            <div class="z-1 border-solid border-grey rounded-md border-8 shadow-xl h-[55vh]">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.7704956179414!2d-80.259265324264!3d26.17160289154566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d90689e16cfc25%3A0xd96cfd401d12afad!2sReese%20Vision%20Care!5e0!3m2!1sen!2sus!4v1714844901669!5m2!1sen!2sus" width="600" height="450" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
-            <div className="card-body" class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl'>
-                <div class="flex flex-col w-[100%] justify-left mb-[10px] text-white ml-[3%]">
+          
+
+          <div className="card-body pt-[1rem]">
+            <h2 className="card-title text-2xl text-[#0094DA] mb-4">Reese Vision Care</h2>
+
+            <div className="space-y-6">
+              {/* Address */}
+              <div className="flex items-start">
+              <a
+                href="https://www.google.com/maps?ll=26.171598,-80.25669&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=15667175655522611117"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:text-primary transition"
+              >
+                <div className="bg-[#0094DA] p-3 rounded-full mr-4">
+                  <MapPin className="text-white h-5 w-5" />
+                </div>
+              </a>
+                <div>
+                  <h3 className="font-semibold text-lg text-darktext">Address</h3>
+                  <p className="text-subtext">3801 N University Dr #301</p>
+                  <p className="text-subtext">Sunrise, FL 33351</p>
+                </div>
+              </div>
+
+              {/* Phone */}
+              <div className="flex items-start">
+              <a
+                href="tel:+9547464009"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer hover:text-primary transition"
+              >
+                <div className="bg-[#0094DA] p-3 rounded-full mr-4">
+                    <Phone className="text-white h-5 w-5" />
+                </div>
+              </a>
+                <div>
+                  <h3 className="font-semibold text-lg text-darktext">Phone</h3>
+                  <p className="text-subtext">(954)-746-4009</p>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start">
+                <a
+                  href="mailto:reesevisioncare@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cursor-pointer hover:text-primary transition"
+                >
+                  <div className="bg-[#0094DA] p-3 rounded-full mr-4">
+                    <Mail className="text-white h-5 w-5" />
+                  </div>
+                </a>
+                <div>
+                  <h3 className="font-semibold text-lg text-darktext">Email</h3>
+                  <p className="text-subtext">reesevisioncare@gmail.com</p>
+                </div>
+              </div>
+
+              {/* Hours */}
+              <div className="flex items-start">
+                <div className="bg-[#0094DA] p-3 rounded-full mr-4">
+                  <Clock className="text-white h-5 w-5" />
+                </div>
+                <div className="w-full">
+                  <h3 className="font-semibold text-lg text-darktext">Hours</h3>
+                  <div className="grid grid-cols-[1fr_2fr] gap-2 text-subtext">
+                    <span>Monday</span>
+                    <span>10AM-4PM</span>
+                    <span>Tuesday</span>
+                    <span>9AM-12PM, 1-6PM</span>
+                    <span>Wednesday</span>
+                    <span>10AM-4PM</span>
+                    <span>Thursday</span>
+                    <span>9AM-12PM, 1-6PM</span>
+                    <span>Friday</span>
+                    <span>11AM-1PM, 2-7PM</span>
+                    <span>Saturday</span>
+                    <span>(By appointment only)</span>
+                    <span>Sunday</span>
+                    <span>Closed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            {/* <div className="card-body" class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl'> */}
+                {/* <div class="flex flex-col w-[100%] justify-left mb-[10px] text-white ml-[3%]">
                   <div class="flex">
                     <Link href="tel:9547464009" target="_blank">
                       <div><Image src={white_phone_icon} width="24" height="24" viewBox="0 0 24 24" className="fill-current mb-[3px] mt-[9%]"></Image></div>
@@ -61,7 +154,7 @@ export default function ContactPage() {
                         <li>Sunday: Closed</li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
         </div>
       </section>
     </>
