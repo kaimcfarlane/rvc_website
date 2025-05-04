@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 import ContactModal from './ContactModal'
 import white_phone_icon from '../public/gen_icons/phone_icon_3.png'
 import white_email_icon from '../public/gen_icons/email_icon_5.png'
