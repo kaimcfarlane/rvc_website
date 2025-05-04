@@ -34,7 +34,7 @@ export default function AboutPage() {
     </section>
     <section class="top-[100%] h-[100vh] w-[100%] absolute">
       <div>
-        <Image src={DoctorHeadshot} class="w-[22.3vw] h-[33.2vw] z-1 absolute top-[22%] left-[65%] border-solid border-secondary rounded-lg border-4 shadow-lg" alt='DocPatientPic1'></Image>
+        <Image src={DoctorHeadshot} class="w-[23vw] h-[33.2vw] z-1 absolute top-[22%] left-[65%] border-solid border-secondary rounded-lg border-4 shadow-lg" alt='DocPatientPic1'></Image>
       </div>
       <div class='w-[45%] h-[50%] p-[20px] static ml-[10%] mt-[12%] rounded-md justify-center'>
         <div class='flex flex-col items-center text-black justify-center font-<K2D> text-[3.2vw] leading-none pb-[1.65vw]'>
