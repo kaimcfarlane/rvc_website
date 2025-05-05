@@ -28,6 +28,8 @@ module.exports = {
       white: '#FFFFFF',
       opaque_white: "rgb(255 255 255 / 90%)",
       black: '#000000',
+      subtext: '#666666',     // custom light gray
+      darktext: '#1a1a1a',     // near-black readable text
     },
     extend: {
       backgroundImage: {

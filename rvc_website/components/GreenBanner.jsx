@@ -6,7 +6,7 @@ export default function GreenCircleBanner() {
         <div class="flex justify-evenly content-center pt-[24px] font-<K2D> text-2xl normal-case font-normal">
             <div>Designer Frames</div>
             <div>Contact Lenses</div>
-            <div>Most Insurance Accepted</div>
+            <div>Most Insurances Accepted</div>
         </div>
     </div>
   )
