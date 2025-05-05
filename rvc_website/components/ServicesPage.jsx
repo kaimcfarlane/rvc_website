@@ -114,7 +114,7 @@ export default function ServicesPage() {
                                 <Image className="mr-[5%] w-[6.5vw] h-[6.5vw]" src={Prada_Logo}></Image>
                                 <Image className="mr-[9%]  w-[5.6vw] h-[5.6vw] mt-[0.4vw]" width="85" height="85" src={Armani_Logo}></Image>
                                 <Image className="mr-[4%]  w-[9.3vw] h-[9.3vw] mt-[-1.4vw]" width="140" height="140" src={DocleAndGabbana_Logo}></Image>
-                                <Image clasNames='mr-[7%] w-[7vw] h-[8vw] mt-[-0.78vw]' src={Tiffany_Logo}></Image>
+                                <Image className='mr-[7%] w-[7vw] h-[8vw] mt-[-0.78vw]' src={Tiffany_Logo}></Image>
                             </div>
                             <div className="flex mr-[12%]">
                                 <Image className='mr-[3%] w-[10vw] h-[10vw] mt-[-1.4vw]'src={Burberry_Logo}></Image>
