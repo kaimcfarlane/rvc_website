@@ -47,7 +47,7 @@ export default function InsurancePage() {
                 <div class="mr-[2%] text-black text-[1.6vw] leading-8 font-semibold">Care Credit</div>
                 </div>
                 <div class="flex flex-col w-[100%] justify-left mb-[0.7vw]">
-                    <div class="text-[1.2vw] leading-[1.85vw] mb-[0.7vw]">As a service to our patients, we are pleased to offer the CareCredit card, the nation's leading patient payment program. CareCredit lets you begin your procedure immediately—then pay for it over time with low monthly payments that are easy to fit into your monthly budget.</div>
+                    <div class="text-[1.2vw] leading-[1.85vw] mb-[0.7vw]">As a service to our patients, we are pleased to offer the CareCredit card, the nation&apos;s leading patient payment program. CareCredit lets you begin your procedure immediately—then pay for it over time with low monthly payments that are easy to fit into your monthly budget.</div>
                 </div>
             </div>
         </div>
