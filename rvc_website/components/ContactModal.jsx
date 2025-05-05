@@ -68,6 +68,13 @@ export default function ContactModal({text, placeholder, isJobForm, subText}) {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-[1.07vw] h-[1.04vw] opacity-70 fill-[#544f4f]"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" /><path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" /></svg>
                                 <input type="email" className="grow text-black text-[1.05vw]" placeholder="Email" name='email' />
                             </label>
+                            <label className="input input-bordered flex h-[3vw] items-center gap-2 mb-[0.39vw]">
+                                {/* Clean Heroicons phone icon */}
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-[1.07vw] h-[1.04vw] opacity-70 stroke-[#544f4f]">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                </svg>
+                                <input type="tel" className="grow text-black text-[1.05vw]" placeholder="Phone Number" name='phone' />
+                            </label>
                             <label className="input input-bordered flex items-center h-[3vw] gap-2 mb-[0.39vw]">
                                 <input className="text-black  text-[1.05vw]" type="text" placeholder={placeholder} name='request' />
                             </label>

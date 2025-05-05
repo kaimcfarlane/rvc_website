@@ -92,7 +92,7 @@ export default function ServicesPage() {
                     </div>
                 </div>
             </div>
-            <GreenRectangleBanner text={"We have lots of frames that look cool and fit well so kids actually love their glasses! We use durable products and safe polycarbonate lenses.  We also offer contact lenses for children.  Disposable contact lenses are safer and more convenient making them a great option for kids, especially for sports and other activities."}></GreenRectangleBanner>
+            <GreenRectangleBanner text={"Experience the freedom of clear vision with contact lenses tailored to your lifestyle. Dr. Reese specializes in custom fittings—from colored lenses to multifocals and astigmatism solutions—offering a wide range of daily, weekly, and monthly options."}></GreenRectangleBanner>
             </section>
         <section className="top-[300%] h-[100vh] w-[100%] absolute">
             <div>
