@@ -10,7 +10,7 @@ export default function InsurancePage() {
   return (
     <>
       <section class="h-[100vh] w-[100%] absolute">
-        <div class="absolute font-<K2D> text-[3.97vw] leading-none w-[100%] flex justify-center top-[15%]">
+        <div class="absolute text-[3.97vw] leading-none w-[100%] flex justify-center top-[15%]">
             <div class="text-black">Accepted <mark class="text-primary bg-transparent">Insurances</mark></div>
         </div>
         {/* Background designs commented out below */}
@@ -21,7 +21,7 @@ export default function InsurancePage() {
             <Image src={blue_ellipse} class="w-[200px] h-[200px] z-1 absolute bottom-[-4%] right-[-2%]" alt='BlueRectagneBackground'></Image>
         </div> */}
         <div class='pl-[7%] pr-[7%] static mt-[16%] rounded-md justify-center'>
-            <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+            <div class='flex flex-col items-center text-black justify-center text-5xl pb-[25px]'>
                 <div class="flex flex-row pb-[0.7vw] w-[100%] justify-left">
                 <div class="mr-[2%] text-black text-[1.6vw] leading-8 font-semibold">Vision and Medical Plans</div>
                 </div>
@@ -32,7 +32,7 @@ export default function InsurancePage() {
             </div>
         </div>
         <div class='pl-[7%] pr-[7%] static rounded-md justify-center'>
-            <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+            <div class='flex flex-col items-center text-black justify-center text-5xl pb-[25px]'>
                 <div class="flex flex-row pb-[0.7vw] w-[100%] justify-left">
                 <div class="mr-[2%] text-black text-[1.6vw] leading-8 font-semibold">Payment and FSA</div>
                 </div>
@@ -42,7 +42,7 @@ export default function InsurancePage() {
             </div>
         </div>
         <div class='pl-[7%] pr-[7%] static mt-[1%] rounded-md justify-center'>
-            <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+            <div class='flex flex-col items-center text-black justify-center text-5xl pb-[25px]'>
                 <div class="flex flex-row pb-[0.7vw] w-[100%] justify-left">
                 <div class="mr-[2%] text-black text-[1.6vw] leading-8 font-semibold">Care Credit</div>
                 </div>

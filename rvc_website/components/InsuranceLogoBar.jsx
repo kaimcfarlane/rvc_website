@@ -15,7 +15,7 @@ import Cigna_logo from '../public/gen_icons/cigna_insurance_logo.png'
 export default function InsuranceLogoBar() {
   return (
     <>
-        <button onClick={()=>document.getElementById('insurances_modal').showModal()} className="btn w-[17vw] h-[2.5vw] btn-primary text-white font-<K2D> text-[1vw] normal-case font-normal">View Supported Insurances</button>
+        <button onClick={()=>document.getElementById('insurances_modal').showModal()} className="btn w-[17vw] h-[2.5vw] btn-primary text-white text-[1vw] normal-case font-normal">View Supported Insurances</button>
         <dialog id="insurances_modal" className="modal">
             <div className="modal-box max-w-[100vw] max-h-[100vw] w-[38vw]">
                 <div class='flex flex-col justify-around'>

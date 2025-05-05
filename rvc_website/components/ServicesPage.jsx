@@ -27,7 +27,7 @@ export default function ServicesPage() {
   return (
     <>
         <section class="h-[100vh] w-[100%] absolute">
-        <div class="absolute font-<K2D> text-[7vh] w-[100%] flex justify-center top-[13%]">
+        <div class="absolute text-[7vh] w-[100%] flex justify-center top-[13%]">
             <div class="text-black">Our <mark class="text-primary bg-transparent">Services</mark></div>
         </div>
         <div>
@@ -35,7 +35,7 @@ export default function ServicesPage() {
             <Image src={DocPatient_pic2} class="w-[40%] h-[50%] z-1 absolute top-[28.7%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
         </div>
         <div class='w-[30%] h-[50%] p-[20px] static ml-[10%] mt-[16%] rounded-md justify-center'>
-            <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+            <div class='flex flex-col items-center text-black justify-center text-5xl pb-[25px]'>
                 <div class="flex flex-row pb-[0.75vh] w-[100%] justify-left">
                 <div class="mr-[2%] text-secondary text-[4.2vh] leading-[2.65vw]">Eye Exams</div>
                 </div>
@@ -66,7 +66,7 @@ export default function ServicesPage() {
                 <Image src={DocPatient_pic3} class="w-[42%] h-[47%] z-1 absolute top-[15%] left-[10%] brightness-125" alt='DocPatientPic2'></Image>
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[63%] mt-[10%] rounded-md justify-center'>
-                <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+                <div class='flex flex-col items-center text-black justify-center text-5xl pb-[25px]'>
                     <div class="flex flex-row pb-[1.2vh] w-[100%] justify-left">
                     <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Pediatric Exams</div>
                     </div>
@@ -83,7 +83,7 @@ export default function ServicesPage() {
                 <Image src={ContactsRoom_pic1} class="w-[41%] h-[43%] z-1 absolute top-[15%] left-[55%] brightness-125" alt='DocPatientPic2'></Image>
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[10%] mt-[10%] rounded-md justify-center'>
-                <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+                <div class='flex flex-col items-center text-black justify-center text-5xl pb-[25px]'>
                     <div class="flex flex-row pb-[1.2vh] w-[100%] justify-left">
                     <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Contact Lenses</div>
                     </div>
@@ -100,13 +100,13 @@ export default function ServicesPage() {
                 <Image src={RVCGlassesRoom_pic1} class="w-[40%] h-[46.5%] z-1 absolute top-[15%] left-[10%] brightness-125" alt='DocPatientPic2'></Image>
             </div>
             <div class='w-[30%] h-[50%] p-[20px] static ml-[63%] mt-[10%] rounded-md justify-center'>
-                <div class='flex flex-col items-center text-black justify-center font-<K2D> text-5xl pb-[25px]'>
+                <div class='flex flex-col items-center text-black justify-center text-5xl pb-[25px]'>
                     <div class="flex flex-row pb-[1.2vh] w-[100%] justify-left">
                     <div class="mr-[2%] text-secondary text-[4.2vh] leading-10">Eyewear</div>
                     </div>
                     <div class="flex flex-col w-[100%] justify-left mb-[1.2vh]">
                         <div class="text-[2.1vh] leading-[1.85vw] mb-[1.2vh]">A pair of glasses isn’t just about having great sight, it’s about looking great too. We offer a complete optical showroom with quality eyewear for every lifestyle and budget.  Our knowledgeable and friendly staff will help you choose the perfect eyewear for you!</div>
-                        <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white font-<K2D> text-[1.95vh] leading-7 h-[2.7vw] min-h-0 normal-case font-normal">View Optical Brands</button>
+                        <button onClick={()=>document.getElementById('brands_modal').showModal()} className="btn btn-wide btn-primary text-white text-[1.95vh] leading-7 h-[2.7vw] min-h-0 normal-case font-normal">View Optical Brands</button>
                         <dialog id="brands_modal" className="modal">
                         <div className="modal-box flex flex-col items-center w-[48vw] max-w-[100rem]">
                             <div class="flex mr-[20%]">
