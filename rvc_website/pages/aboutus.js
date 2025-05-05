@@ -5,7 +5,7 @@ import Footer from "@/components/Footer"
 
 export default function AboutUs({route_obj, changeRoute}) {
   return (
-    <main class="overflow-y-scroll">
+    <main className="overflow-y-scroll">
       <Header route_obj={route_obj} changeRoute={changeRoute}/>
       <AboutPage/>
       <Footer changeRoute={changeRoute} background={"blue"} pages={2}/>

@@ -54,7 +54,7 @@ export default function Footer({changeRoute, background, pages}) {
   }, [])
 
   return (
-    <div class="w-[100%] absolute" style={{top: footerPosition}}>
+    <div className="w-[100%] absolute" style={{top: footerPosition}}>
       {
         background == "blue" && <RequestBanner text={"Request an Appointment and See the Difference Now"}/>
       }

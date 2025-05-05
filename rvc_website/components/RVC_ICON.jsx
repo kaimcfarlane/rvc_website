@@ -25,7 +25,7 @@ export default function RVC_ICON({background, white}) {
   },[])
 
   return (
-    <div ref={imgContainer} class="relative">
+    <div ref={imgContainer} className="relative">
     <a href=''>
     <Image src={rvc_icon_img} className='w-[6.58vw] h-[5.25vw]' alt='RVC_Logo'></Image>
     </a>
