@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
 
-export default function header({route_obj, changeRoute}) {
+export default function Header({route_obj, changeRoute}) {
 
   const homeBtn = useRef();
   const aboutusBtn = useRef();

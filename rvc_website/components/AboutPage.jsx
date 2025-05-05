@@ -49,7 +49,7 @@ export default function AboutPage() {
         <div class='flex text-black justify-center font-<K2D> leading-[2.38vw] text-[1.98vw] pt-[0.7vw]'>
           <div class="">
             Dr. Melanie A. Reese is a <mark class="text-primary bg-transparent">Board</mark> Certified Optometrist and has practiced in South Florida for over 20 years.  
-            Dr. Reese graduated from Nova Southeastern University, College of Optometry with the <mark class="text-primary bg-transparent">Dean's Award</mark> in 2002 for the highest scholastic achievement in her graduating class.  
+            Dr. Reese graduated from Nova Southeastern University, College of Optometry with the <mark class="text-primary bg-transparent">Dean&#39;s Award</mark> in 2002 for the highest scholastic achievement in her graduating class.  
             Dr. Reese is committed to providing professional eye care to the community and building long-lasting relationships with her patients by providing services that enhance their lives.
           </div>
         </div>
