@@ -69,9 +69,9 @@ export default function Header({route_obj, changeRoute}) {
   }
 
   return (
-    <section class="flex flex-row justify-between bg-white h-[5.38vw] fixed w-full z-[1] top-[0%] shadow-md">
+    <section className="flex flex-row justify-between bg-white h-[5.38vw] fixed w-full z-[1] top-[0%] shadow-md">
         <RVC_LOGO changeRoute={changeRoute}></RVC_LOGO>
-        <div id='page_links' class="flex items-center w-[50vw] justify-around text-black">
+        <div id='page_links' className="flex items-center w-[50vw] justify-around text-black">
             <Link href="/">
               <button ref={homeBtn} id='homeBtn' onClick={() => changeRoute("home")} className="btn btn-ghost text-[1vw] w-[5vw] h-[3vw]">HOME</button>
             </Link>
